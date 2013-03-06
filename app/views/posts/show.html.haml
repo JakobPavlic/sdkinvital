@@ -1,0 +1,12 @@
+%h1
+  =@post.title
+%h2
+  =@post.author
+%p
+  =@post.content
+%small
+  =@post.created_at
+%b
+  =@post.facebook_like
+  
+= link_to 'Nazaj na vse objave', posts_path

@@ -1,0 +1,14 @@
+%h1
+  Blog
+  
+=image_tag "Ring.jpg"
+    
+- @posts.each do |post|
+  %h2
+    = link_to post.title, post
+  %h3
+    = post.author
+  %p
+    = post.content
+  %b
+    = post.facebook_like 

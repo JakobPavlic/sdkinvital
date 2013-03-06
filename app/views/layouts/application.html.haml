@@ -1,0 +1,14 @@
+!!! 5
+%html
+  %head
+    %title Športno društvo Kin
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+    
+  %body    
+    %p Domov KdoSmo KjeSmo
+    =link_to 'Blog', posts_path
+    
+    = yield
+    
