@@ -1,11 +1,10 @@
 %h1
-  Blog  
+  Blog
+    
 - @posts.each do |post|
   %h2
     = link_to post.title, post
-  %h3
-    = post.author
+  %small
+    = link_to post.instructor.name, instructor_path(post.instructor)
   %p
     = post.content
-  %b
-    = post.facebook_like 

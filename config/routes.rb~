@@ -1,6 +1,9 @@
 Sport::Application.routes.draw do
 
-  resources :posts
+  resources :instructors do
+    resources :posts
+  end
+  resources :exercises
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

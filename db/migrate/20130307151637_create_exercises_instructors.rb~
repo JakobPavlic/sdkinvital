@@ -1,0 +1,9 @@
+class CreateExercisesInstructors < ActiveRecord::Migration
+  def change
+    create_table :exercises_instructors do |t|
+      t.int :exercise_id
+      t.int :instructor_id
+      t.timestamps
+    end
+  end
+end

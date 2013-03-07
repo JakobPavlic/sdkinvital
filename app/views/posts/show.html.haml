@@ -1,12 +1,16 @@
 %h1
   =@post.title
-%h2
-  =@post.author
+
+%small
+  =@post.created_at.strftime("%d %b. %Y")
+
+  =@post.created_at.strftime("%H:%M")
+
 %p
   =@post.content
+  &#xf004
+
 %small
-  =@post.created_at
-%b
-  =@post.facebook_like
+  = link_to @post.instructor.name, instructor_path(@post.instructor)
   
 = link_to 'Nazaj na vse objave', posts_path

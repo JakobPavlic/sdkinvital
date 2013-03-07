@@ -1,0 +1,8 @@
+%h1
+  =@instructor.name
+%small
+  =@instructor.description
+%small
+  =@post.created_at
+  
+= link_to 'Nazaj na vse inštruktorje', instructors_path
