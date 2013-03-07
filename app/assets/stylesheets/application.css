@@ -5,6 +5,10 @@
  *= require_self
  *= require_tree . 
 */
+/*
+ *= require font-awesome
+ */
+
 div#container{
   width: 750px;
   margin:0 auto;
