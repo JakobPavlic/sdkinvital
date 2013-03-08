@@ -9,7 +9,35 @@
  *= require font-awesome
  */
 
+/*glavno ogrodje*/
 div#container{
   width: 750px;
   margin:0 auto;
+  border: solid 1px gray;
   }
+div#content{
+  padding: 20px;
+}
+/*glavno kazalo*/
+#mainMenu li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}
+#mainMenu {
+  margin: 0 auto;
+  width: 400px;
+}
+#latestBlog{
+  float: right;
+  width:200px
+}
+#photoGallery {
+  width: 420px;
+  height: 220px;
+  margin: 20px;
+  float:left;
+}
+#footer {
+  clear:left;
+}

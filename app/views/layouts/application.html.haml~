@@ -7,8 +7,21 @@
     = csrf_meta_tags
     
   %body    
-    %p Domov KdoSmo KjeSmo
-    =link_to 'Blog', posts_path
-    
-    = yield
+    #container
+      #content
+        #mainMenu
+          %ul
+            %li
+              =link_to 'Domov', '/index'
+            %li
+              =link_to 'Blog', posts_path
+            %li
+              =link_to 'Vadbe', exercises_path
+            %li
+              =link_to 'Inštruktorji', instructors_path
+        
+        = yield
+        
+        #footer
+        
     

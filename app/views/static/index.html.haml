@@ -1,1 +1,27 @@
-%h1 Prva stran
+#photoGallery  
+  #banner-fade
+    %ul.bjqs
+      %li
+        %img{:src => "http://placehold.it/200x400", :title => "KIN:Bootcamp"}
+      %li
+        %img{:src => "http://placehold.it/200x400", :title => "KIN:Upokojenci"}
+      %li
+        %img{:src => "http://placehold.it/200x400", :title => "KIN:raztezanje"}
+      %li
+        %img{:src => "http://placehold.it/200x400", :title => "KIN:Smučarski poleti"}
+
+:javascript
+  jQuery(document).ready(function($) {
+      $('#banner-fade').bjqs({
+            animtype : 'slide',
+            height : 200,
+            width : 400,
+            responsive : true,
+            randomstart : true,
+            usecaptions : true
+      });
+  });
+
+#latestBlog
+  Zadnje z bloga
+
