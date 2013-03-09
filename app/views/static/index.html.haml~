@@ -1,29 +1,27 @@
-%h1 Prva stran
-
-#photoGallery  
-  #banner-fade
-    %ul.bjqs
-      %li
-        %img{:src => "http://placehold.it/200x400", :title => "KIN:Bootcamp"}
-      %li
-        %img{:src => "http://placehold.it/200x400", :title => "KIN:Upokojenci"}
-      %li
-        %img{:src => "http://placehold.it/200x400", :title => "KIN:raztezanje"}
-      %li
-        %img{:src => "http://placehold.it/200x400", :title => "KIN:Smučarski poleti"}
+#photoGallery
+  %ul.bjqs
+    %li
+      %img{:src => "http://i1343.photobucket.com/albums/o782/jakob-pavlic/DSCN4902_zps17865775.jpg", :title => "KIN:Bootcamp", :width => "380"}
+    %li
+      %img{:src => "http://i1343.photobucket.com/albums/o782/jakob-pavlic/DSCN4919_zps8d1889d2.jpg", :title => "KIN:Upokojenci", :width => "380"}
+    %li
+      %img{:src => "http://i1343.photobucket.com/albums/o782/jakob-pavlic/DSCN4883_zps4237ad5a.jpg", :title => "KIN:raztezanje", :width => "380"}
 
 :javascript
   jQuery(document).ready(function($) {
-      $('#banner-fade').bjqs({
-            animtype : 'slide',
-            height : 200,
-            width : 400,
+      $('#photoGallery').bjqs({
+            animtype : 'fade',
+            animduration : 700,
+            animspeed : 4300,
+            height : 285,
+            width : 380,
             responsive : true,
             randomstart : true,
-            usecaptions : true
+            usecaptions : true,
+            showcontrols: false,
+            keyboardnav: true
       });
   });
 
 #latestBlog
-  Zadnje z bloga
 
