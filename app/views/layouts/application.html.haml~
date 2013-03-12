@@ -1,27 +1,28 @@
 !!! 5
 %html
   %head
-    %title Športno društvo Kin
+    %meta{:charset => "utf-8"}
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
+    %title= content_for?(:title) ? yield(:title) : "ŠD Kin"
+    %meta{:content => "", :name => "description"}
+    %meta{:content => "", :name => "author"}
     = stylesheet_link_tag 'application'
     = javascript_include_tag 'application'
     = csrf_meta_tags
-    
+    =yield(:head)
   %body    
-    #container
-      #content
-        #mainMenu
-          %ul
-            %li
-              =link_to 'Domov', '/index'
-            %li
-              =link_to 'Blog', posts_path
-            %li
-              =link_to 'Vadbe', exercises_path
-            %li
-              =link_to 'Inštruktorji', instructors_path
-        
-        = yield
-        
-        #footer
+    .navbar.navbar
+      .navbar-inner
+        .container
+          =render 'layouts/navigation'
+    #main{:role => "main"}
+      .container
+        .content
+          .row
+            .span12
+              = render 'layouts/messages'
+              = yield
+          %footer
+
         
     

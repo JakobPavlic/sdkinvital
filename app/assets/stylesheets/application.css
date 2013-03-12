@@ -8,27 +8,26 @@
 /*
  *= require font-awesome
  */
-
 /*glavno ogrodje*/
-body {
+/*body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  background: url('../assets/mochaGrunge.png');
+  background: url('../assets/white_wall_hash.png');
   background-repeat: repeat;
 }
 div#container{
   width: 900px;
   margin:0 auto;
-  border: solid 3px gray;
-  background: url('../assets/white_wall_hash.png');
+  border: solid 3px  	#DCDCDC;
+  background-color: white;
   background-repeat: repeat;
-  -webkit-border-radius: 10px;
+  /*-webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
   }
 div#content{
   padding: 20px;
 }
-/*glavno kazalo*/
+glavno kazalo
 #mainMenu li {
   display: inline;
   list-style-type: none;
@@ -57,4 +56,4 @@ div#content{
 
 #footer {
   clear:left;
-}
+}*/

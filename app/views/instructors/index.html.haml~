@@ -1,7 +1,7 @@
 %h1
   Blog
     
-- @instructors.each do |post|
+- @instructors.each do |instructor|
   %h2
     = link_to instructor.name, instructor
   %p

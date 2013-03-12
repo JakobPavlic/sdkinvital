@@ -2,7 +2,8 @@
   =@instructor.name
 %small
   =@instructor.description
-%small
-  =@post.created_at
   
 = link_to 'Nazaj na vse inštruktorje', instructors_path
+%i{:class =>'icon-circle-blank',:id=>'krogec', :onclick => 'premik()'}
+%canvas{:id => 'drawCanvas', :width => '550', :height => '400'}
+

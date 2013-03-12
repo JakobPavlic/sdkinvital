@@ -32,8 +32,9 @@ end
 group :production do
   gem 'pg'
 end
-
 gem 'therubyracer'
+gem 'bootstrap-sass'
+gem 'simple_form'
 
 gem "font-awesome-rails"
 
