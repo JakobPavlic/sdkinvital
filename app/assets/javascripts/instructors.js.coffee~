@@ -14,19 +14,4 @@ draw = (ctx, x, y) ->
 window.onload = ->
   canvas = document.getElementById 'drawCanvas'
   context= canvas.getContext '2d'
-  draw context, 300, 200 
-  
-kot=0
-odmik=0
-krogec = document.getElementById("krogec").style
-
-function premik()
-{
-   var x = odmik * Math.cos(kot * Math.PI / 180)
-   var y = odmik * Math.sin(kot * Math.PI / 180)
-   slika.left = Math.floor(x) + "px"
-   slika.top = Math.floor(y) + "px"
-   odmik += 1
-   kot += 1
-   setTimeout("premik()", 30)
-}         
+  draw context, 300, 200         

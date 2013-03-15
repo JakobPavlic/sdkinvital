@@ -1,17 +1,4 @@
 # Place all the behaviors and hooks related to the matching controller here.
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
-draw = (ctx, x, y) ->
-  circle = (ctx, x, y) ->
-    ctx.beginPath()
-    ctx.arc x, y, 100, 0, 2*Math.PI, false
-    ctx.stroke()
-  ctx.strokeStyle = 'rgba(255,40,20,0.7)'
-  circle ctx, x, y
-  for angle in [0...2*Math.PI] by 1/3*Math.PI
-    circle ctx, x+100*Math.cos(angle),
-                y+100*Math.sin(angle)
-window.onload = ->
-  canvas = document.getElementById 'drawCanvas'
-  context= canvas.getContext '2d'
-  draw context, 300, 200         
+    

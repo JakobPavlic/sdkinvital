@@ -35,6 +35,7 @@ end
 gem 'therubyracer'
 gem 'bootstrap-sass'
 gem 'simple_form'
+gem 'newrelic_rpm'
 
 gem "font-awesome-rails"
 
