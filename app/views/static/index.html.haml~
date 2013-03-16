@@ -1,24 +1,55 @@
-%div{:id => "Galerija", :class => "carousel slide"}
-  %ol{:class => "carousel-indicators"}
-    %li{"data-target" => "#Galerija", "data-slide-to" => "0", :class => "active"}
-    %li{"data-target" => "#Galerija", "data-slide-to" => "1"}
-    %li{"data-target" => "#Galerija", "data-slide-to" => "2"}
-  
-  %div{:class => "carousel-inner"}
-    %div{:class => "active item"}
-      %img{:src => "http://i1343.photobucket.com/albums/o782/jakob-pavlic/DSCN4902_zps17865775.jpg", :title => "KIN:Bootcamp"}
-      %div{:class => "carousel-caption"}
-        %p
-          KIN:Bootcamp
-    %div{:class => "item"}
-      %img{:src => "http://i1343.photobucket.com/albums/o782/jakob-pavlic/DSCN4919_zps8d1889d2.jpg", :title => "KIN:Upokojenci"}
-    %div{:class => "item"}
-      %img{:src => "http://i1343.photobucket.com/albums/o782/jakob-pavlic/DSCN4883_zps4237ad5a.jpg", :title => "KIN:raztezanje"}
+.row-fluid
+  .span7
+    %div{:id => "Galerija", :class => "carousel slide"}
+      %ol{:class => "carousel-indicators"}
+        %li{"data-target" => "#Galerija", "data-slide-to" => "0", :class => "active"}
+        %li{"data-target" => "#Galerija", "data-slide-to" => "1"}
+        %li{"data-target" => "#Galerija", "data-slide-to" => "2"}
       
-  %a{:class => "carousel-control left", :href => "#Galerija", "data-slide" => "prev"}
-    &lsaquo;
-  %a{:class => "carousel-control right", :href => "#Galerija", "data-slide" => "next"}
-    &rsaquo;
-    
-:javascript
-  $('.carousel').carousel();
+      %div{:class => "carousel-inner"}
+        %div{:class => "active item"}
+          %img{:src => "http://i1343.photobucket.com/albums/o782/jakob-pavlic/DSCN4902_zps17865775.jpg", :title => "KIN:Bootcamp"}
+          %div{:class => "carousel-caption"}
+            %p
+              KIN:Bootcamp
+        %div{:class => "item"}
+          %img{:src => "http://i1343.photobucket.com/albums/o782/jakob-pavlic/DSCN4919_zps8d1889d2.jpg", :title => "KIN:Upokojenci"}
+          %div{:class => "carousel-caption"}
+            %p
+              KIN:Upokojenci
+        %div{:class => "item"}
+          %img{:src => "http://i1343.photobucket.com/albums/o782/jakob-pavlic/DSCN4883_zps4237ad5a.jpg", :title => "KIN:raztezanje"}
+          %div{:class => "carousel-caption"}
+            %p
+              KIN:Raztezanje
+          
+      %a{:class => "carousel-control left", :href => "#Galerija", "data-slide" => "prev"}
+        &lsaquo;
+      %a{:class => "carousel-control right", :href => "#Galerija", "data-slide" => "next"}
+        &rsaquo;
+        
+    :javascript
+      $(document).ready(function(){
+        $('.carousel').carousel();
+      });
+  .span5
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup">
+    <form action="http://kinvital.us5.list-manage.com/subscribe/post?u=e6934e9c33c3cf45dbee6c0e8&amp;id=85066628db" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <h4>Prijavi se na naše novice</h4>
+    <div class="mc-field-group">
+    <label for="mce-EMAIL">Email naslov </label>
+    <div class="input-prepend">
+    <span class="add-on"><i class="icon-envelope"></i></span>
+    <input type="email" placeholder="karl.pilkington@email.com" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+    </div>
+    </div>
+    <div id="mce-responses" class="clear">
+    <div class="response" id="mce-error-response" style="display:none"></div>
+    <div class="response" id="mce-success-response" style="display:none"></div>
+    </div>
+    <div class="clear"><input type="submit" value="Prijava" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
+    </form>
+    </div>
+
+    <!--End mc_embed_signup-->

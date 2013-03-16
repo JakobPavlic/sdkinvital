@@ -8,17 +8,4 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
-kot=0
-odmik=0
-krogec = document.getElementById('krogec').style
-
-function premik()
-{
-   var x = odmik * Math.cos(kot * Math.PI / 180)
-   var y = odmik * Math.sin(kot * Math.PI / 180)
-   krogec.left = Math.floor(x) + "px"
-   krogec.top = Math.floor(y) + "px"
-   odmik += 1
-   kot += 1
-   setTimeout("premik()", 30)
-} 
+ 
