@@ -2,7 +2,8 @@ class CreateInstructors < ActiveRecord::Migration
   def up
     create_table :instructors do |t|
       t.string :name
-      t.string :description
+      t.string :picture
+      t.text :description
       t.timestamps
     end
   end

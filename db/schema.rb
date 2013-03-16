@@ -29,7 +29,8 @@ ActiveRecord::Schema.define(:version => 20130307151637) do
 
   create_table "instructors", :force => true do |t|
     t.string   "name"
-    t.string   "description"
+    t.string   "picture"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

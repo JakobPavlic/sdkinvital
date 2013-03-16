@@ -1,9 +1,8 @@
+%i{:class => "icon-arrow-left"} 
+= link_to "Nazaj na vse vadbe", exercises_path
+
 %h1
   =@exercise.name
   
 %p
   =@exercise.description
-%i.icon-user
-
-  
-= link_to 'Nazaj na vse vadbe', exercises_path

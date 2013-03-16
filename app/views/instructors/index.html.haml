@@ -1,7 +1,10 @@
-%h1
-    
-- @instructors.each do |instructor|
-  %h2
-    = link_to instructor.name, instructor
-  %p
-    = instructor.description
+%ul.media-list    
+  - @instructors.each do |instructor|
+    %li{:class => "media"}
+      %div{:class => "pull-left"}
+        %img{:class => "img-polaroid", :width => "100px", 'src' => "#{instructor.picture}"}
+      %div{:class => "media-body"}
+        %h4{:class => "media-heading"}
+          =instructor.name
+        %p
+          =instructor.description

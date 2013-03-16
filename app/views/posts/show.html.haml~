@@ -1,5 +1,11 @@
-%h1
+%i{:class => "icon-arrow-left"} 
+= link_to 'Vse objave', posts_path
+
+%h2
   =@post.title
+%small
+  Avtor:
+  = link_to @post.instructor.name, instructor_path(@post.instructor)
 
 %small
   =@post.created_at.strftime("%d %b. %Y")
@@ -8,9 +14,6 @@
 
 %p
   =@post.content
-%i.icon-camera
+%i.icon-user
 
-%small
-  = link_to @post.instructor.name, instructor_path(@post.instructor)
-  
-= link_to 'Nazaj na vse objave', posts_path
+

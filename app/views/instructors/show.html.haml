@@ -1,8 +1,12 @@
-%h1
-  =@instructor.name
-%small
-  =@instructor.description
-  
-= link_to 'Nazaj na vse inštruktorje', instructors_path
+%i{:class => "icon-arrow-left"}
+= link_to 'Vsi inštruktorji', instructors_path 
 
+%div.media
+  %div{:class => "pull-left"}
+    %img{:class => "img-polaroid", :width => "100px", 'src' => "#{@instructor.picture}"}
+  %div{:class => "media-body"}
+    %h4{:class => "media-heading"}
+      =@instructor.name
+    %p
+      =@instructor.description
 
