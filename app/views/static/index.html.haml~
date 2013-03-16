@@ -53,3 +53,11 @@
     </div>
 
     <!--End mc_embed_signup-->
+    
+.row-fluid
+  .span4
+    %blockquote
+      %p
+        Letos sem tekla na Grintovec. Počutim se super!
+      %small
+        Štefka, 102, Ihan
