@@ -8,3 +8,7 @@
           =instructor.name
         %p
           =instructor.description
+        %p
+          -unless instructor.phone_number.nil? then
+            %i{:class => "icon-phone-sign"}
+            =instructor.phone_number

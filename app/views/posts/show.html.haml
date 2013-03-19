@@ -1,20 +1,24 @@
-=render 'layouts/facebook'
-%i{:class => "icon-arrow-left"} 
-= link_to 'Vse objave', posts_path
+%div{:id => "fb-root"}
+= link_to '<i class="icon-chevron-left"></i> Vse objave'.html_safe, posts_path
 
 %h2
   =@post.title
-%small
+%small.muted
   %i.icon-user
   = link_to @post.instructor.name, instructor_path(@post.instructor)
 
-%small
+  %i{:class => "icon-calendar"}
   =@post.created_at.strftime("%d %b. %Y")
-
+  
+  %i{:class => "icon-time"}
   =@post.created_at.strftime("%H:%M")
 
 %p
   =@post.content
     
-<fb:like send="false" layout="button_count" width="90" show_faces="true"></fb:like>
+%p
+  %div{"href" => "#{request.protocol}#{request.host}#{request.fullpath}", :class => "g-plusone", "data-size" => "medium"}
+  <fb:like send="false" layout="button_count" width="90" show_faces="true"></fb:like>
+  =render 'layouts/facebook'
+  =render 'layouts/google'
 

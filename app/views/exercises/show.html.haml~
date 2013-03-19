@@ -1,5 +1,4 @@
-%i{:class => "icon-arrow-left"} 
-= link_to "Nazaj na vse vadbe", exercises_path
+= link_to "class => '<i class="icon-plus"></i> Vse vadbe'.html_safe, exercises_path
 
 %h1
   =@exercise.name

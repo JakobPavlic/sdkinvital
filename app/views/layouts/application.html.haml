@@ -17,19 +17,17 @@
     =yield(:head)
     /[if lt IE 9]
       %script{ :src => '//html5shiv.googlecode.com/svn/trunk/html5.js' }
+    /[if lt IE 8]
+      = stylesheet_link_tag "font-awesome-ie7.min.css", media: "all"
   %body    
-    %div{:class => "container"}
-      .masthead
-        %h3.muted
-          Športno društvo KinVital
-        .navbar
-          .navbar-inner
-            .container
-              =render 'layouts/navigation'
-      #main{:role => "main"}
+    %div.navbar.navbar-fixed-top
+      %div.navbar-inner
         .container
-          .content
-            = render 'layouts/messages'
-            = yield
+          =render 'layouts/navigation'
+    #main{:role => "main"}
+      .container
+        .content
+          = render 'layouts/messages'
+          = yield
         
     

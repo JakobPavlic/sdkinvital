@@ -1,10 +1,5 @@
-%i{:class => "icon-arrow-left"}
-= link_to 'Vsi inštruktorje', instructors_path 
+= link_to '<i class="icon-chevron-left"></i> Vsi inštruktorji'.html_safe, instructors_path 
 
-%h2
-  =@instructor.name
-%small
-  =@instructor.description
 %div.media
   %div{:class => "pull-left"}
     %img{:class => "img-polaroid", :width => "100px", 'src' => "#{@instructor.picture}"}
@@ -13,4 +8,11 @@
       =@instructor.name
     %p
       =@instructor.description
+    %p
+      -if defined?(@instructor.phone_number) then
+        %i{:class => "icon-phone-sign"}
+        =@instructor.phone_number
+        
+
+      
 

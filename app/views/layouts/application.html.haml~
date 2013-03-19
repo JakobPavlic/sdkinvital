@@ -4,8 +4,6 @@
     %meta{:charset => "utf-8"}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
     %title= content_for?(:title) ? yield(:title) : "ŠD KinVital"
-    %meta{:content => "", :name => "description"}
-    %meta{:content => "", :name => "author"}
     %meta{"property" => "og:title", :content => "#{@ogtitle}"}
     %meta{"property" => "og:type", :content => "#{@ogtype}"}
     %meta{"property" => "og:url", :content => "#{request.protocol}#{request.host}#{request.fullpath}"}
@@ -19,19 +17,17 @@
     =yield(:head)
     /[if lt IE 9]
       %script{ :src => '//html5shiv.googlecode.com/svn/trunk/html5.js' }
+    /[if lt IE 8]
+      = stylesheet_link_tag "font-awesome-ie7.min.css", media: "all"
   %body    
-    %div{:class => "container"}
-      .masthead
-        %h3.muted
-          Športno društvo KinVital
-        .navbar
-          .navbar-inner
-            .container
-              =render 'layouts/navigation'
-      #main{:role => "main"}
+    %nav.navbar.navbar-fixed-top
+      %nav.navbar-inner
         .container
-          .content
-            = render 'layouts/messages'
-            = yield
+          =render 'layouts/navigation'
+    #main{:role => "main"}
+      .container
+        .content
+          = render 'layouts/messages'
+          = yield
         
     

@@ -1,5 +1,4 @@
-%i{:class => "icon-arrow-left"}
-= link_to 'Vsi inštruktorji', instructors_path 
+= link_to '<i class="icon-chevron-left"></i> Vsi inštruktorji'.html_safe, instructors_path 
 
 %div.media
   %div{:class => "pull-left"}
@@ -9,4 +8,11 @@
       =@instructor.name
     %p
       =@instructor.description
+    %p
+      -unless @instructor.phone_number.nil? then
+        %i{:class => "icon-phone-sign"}
+        =@instructor.phone_number
+        
+
+      
 

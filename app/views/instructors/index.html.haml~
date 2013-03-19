@@ -2,9 +2,13 @@
   - @instructors.each do |instructor|
     %li{:class => "media"}
       %div{:class => "pull-left"}
-        %img{:class => "img-polaroid", :width => "100px" 'src' => "#{instructor.picture}"}
+        %img{:class => "img-polaroid", :width => "100px", 'src' => "#{instructor.picture}"}
       %div{:class => "media-body"}
         %h4{:class => "media-heading"}
           =instructor.name
         %p
           =instructor.description
+        %p
+          -unless @instructor.phone_number.nil? then
+            %i{:class => "icon-phone-sign"}
+            =@instructor.phone_number

@@ -4,8 +4,10 @@
   %small
     %i.icon-user
     = link_to post.instructor.name, instructor_path(post.instructor)
-    =@post.created_at.strftime("%d %b. %Y")
-    =@post.created_at.strftime("%H:%M")
+    %i{:class => "icon-calendar"}
+    =post.created_at.strftime("%d %b. %Y")
+    %i{:class => "icon-time"}
+    =post.created_at.strftime("%H:%M")
   %p
     = post.content.slice(0..200)+"..."
     = link_to 'Več <i class="icon-plus"></i>'.html_safe, post

@@ -1,0 +1,22 @@
+<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="http://kinvital.us5.list-manage.com/subscribe/post?u=e6934e9c33c3cf45dbee6c0e8&amp;id=85066628db" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<span class="label label-info">Prijavi se na naše novice</span>
+<div class="mc-field-group">
+<small>
+<label for="mce-EMAIL">Email naslov </label>
+</small>
+<div class="input-prepend">
+<span class="add-on"><i class="icon-envelope"></i></span>
+<input type="email" placeholder="karl.pilkington@email.com" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+</div>
+<div id="mce-responses" class="clear">
+<div class="response" id="mce-error-response" style="display:none"></div>
+<div class="response" id="mce-success-response" style="display:none"></div>
+</div>
+<div class="clear"><input type="submit" value="Prijava" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
