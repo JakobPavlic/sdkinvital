@@ -6,8 +6,9 @@
     %title= content_for?(:title) ? yield(:title) : "ŠD KinVital"
     %meta{:content => "", :name => "description"}
     %meta{:content => "", :name => "author"}
-    %meta{"property" => "og:title", :content => "&#x160;portno dru&#x161;tvo KinVital"}
+    %meta{"property" => "og:title", :content => "Športno društvo KinVital"}
     %meta{"property" => "og:type", :content => "activity"}
+    %meta{"property" => "og:url", :content => "#{request.fullpath}"}
     %meta{"property" => "og:image", :content => "http://i1343.photobucket.com/albums/o782/jakob-pavlic/DSCN4902_zps17865775.jpg"}
     %meta{"property" => "og:site_name", :content => "KinVital"}
     %meta{"property" => "fb:admins", :content => "178312275649225"}
