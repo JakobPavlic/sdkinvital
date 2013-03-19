@@ -11,7 +11,7 @@
     %meta{"property" => "og:url", :content => "http://kinvital.herokuapp.com"}
     %meta{"property" => "og:image", :content => "http://i1343.photobucket.com/albums/o782/jakob-pavlic/DSCN4902_zps17865775.jpg"}
     %meta{"property" => "og:site_name", :content => "KinVital"}
-    %meta{"property" => "fb:admins", :content => "178312275649225"}
+    %meta{"property" => "app_id", :content => "163924060429482"}
     = stylesheet_link_tag 'application'
     = javascript_include_tag 'application'
     = csrf_meta_tags
