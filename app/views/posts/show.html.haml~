@@ -1,4 +1,6 @@
-=render 'layouts/facebook'
+%div{:id => "fb-root"}
+:javascript
+  =render 'layouts/facebook'
 %i{:class => "icon-arrow-left"} 
 = link_to 'Vse objave', posts_path
 
@@ -16,5 +18,5 @@
 %p
   =@post.content
     
-<fb:like send="false" layout="button_count" width="450" show_faces="true"></fb:like>
+<fb:like send="false" layout="button_count" width="90" show_faces="true"></fb:like>
 
