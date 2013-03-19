@@ -6,6 +6,9 @@ class PostsController < ApplicationController
   def show
     
     @post=Post.find(params[:id])
+    @ogtitle=@post.title
+    @ogdescription=@post.content
+    @ogtype="article"
   end
   
 end
