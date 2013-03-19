@@ -4,8 +4,6 @@
     %meta{:charset => "utf-8"}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
     %title= content_for?(:title) ? yield(:title) : "ŠD KinVital"
-    %meta{:content => "", :name => "description"}
-    %meta{:content => "", :name => "author"}
     %meta{"property" => "og:title", :content => "#{@ogtitle}"}
     %meta{"property" => "og:type", :content => "#{@ogtype}"}
     %meta{"property" => "og:url", :content => "#{request.protocol}#{request.host}#{request.fullpath}"}
