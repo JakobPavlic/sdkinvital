@@ -3,7 +3,7 @@
   %head
     %meta{:charset => "utf-8"}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
-    %title= content_for?(:title) ? yield(:title) : "ŠD Kin"
+    %title= content_for?(:title) ? yield(:title) : "ŠD KinVital"
     %meta{:content => "", :name => "description"}
     %meta{:content => "", :name => "author"}
     %meta{"property" => "og:title", :content => "&#x160;portno dru&#x161;tvo KinVital"}
