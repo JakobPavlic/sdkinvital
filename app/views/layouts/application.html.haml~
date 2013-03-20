@@ -3,7 +3,7 @@
   %head
     %meta{:charset => "utf-8"}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
-    %title= content_for?(:title) ? yield(:title) : "#{defined?(@ogtitle) ? "ŠD KinVital: " + @ogtitle : "ŠD KinVital"}"
+    %title= content_for?(:title) ? yield(:title) : "#{defined?(@ogtitle) ? "Kin: " + @ogtitle : "ŠD KinVital"}"
     %meta{"property" => "og:title", :content => "#{defined?(@ogtitle) ? @ogtitle : "ŠD KinVital"}"}
     %meta{"property" => "og:type", :content => "#{defined?(@ogtype) ? @ogtype : "website"}"}
     %meta{"property" => "og:url", :content => "#{request.protocol}#{request.host}#{request.fullpath}"}
