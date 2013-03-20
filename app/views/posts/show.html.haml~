@@ -14,14 +14,14 @@
   =@post.created_at.strftime("%H:%M")
 
 %p
-  =@post.content
+  =@post.content.slice(0..100)
     
 %p
   /
     <g:plusone href="#{request.protocol}#{request.host}#{request.fullpath}" size="medium"></ g:plusone>
     <fb:like send="false" layout="button_count" width="90" show_faces="true"></fb:like>
   
-  <a href="#{request.protocol}#{request.host}#{request.fullpath}" class="twitter-share-button" data-lang="en">Tweet</a>
+  <a href="https://twitter.com/share" data-url="#{request.protocol}#{request.host}#{request.fullpath}" class="twitter-share-button" data-lang="en">Tweet</a>
     
   =render 'layouts/facebook'
   =render 'layouts/google'

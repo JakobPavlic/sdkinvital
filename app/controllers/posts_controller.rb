@@ -7,7 +7,7 @@ class PostsController < ApplicationController
     
     @post=Post.find(params[:id])
     @ogtitle=@post.title
-    @ogdescription=@post.content
+    @ogdescription=@post.content.slice(0..100)+"..."
     @ogtype="article"
   end
   
