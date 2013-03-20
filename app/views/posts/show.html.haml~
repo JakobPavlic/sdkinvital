@@ -14,7 +14,7 @@
   =@post.created_at.strftime("%H:%M")
 
 %p
-  =@post.content.slice(0..100)
+  =@post.content
     
 %p
   /
