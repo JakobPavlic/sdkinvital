@@ -32,7 +32,7 @@
       $(document).ready(function(){
         $('.carousel').carousel();
       });
-  .span5
+  .span2
     =render 'layouts/mailchimp'
     
 .row-fluid
@@ -41,4 +41,10 @@
       %p
         Letos sem tekla na Grintovec. Počutim se super!
       %small
-        Štefka, 102, Ihan
+        Štefka, 102
+/.footer
+  %ul.nav.nav-pills.pull-right
+    %li
+      =link_to "Facebook", "http://www.facebook.com/sdkinvital"
+    %li
+      =link_to "Google+", "http://plus.google.com/100090636462709186136/posts"

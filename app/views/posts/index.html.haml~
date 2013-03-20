@@ -1,15 +1,16 @@
-- @posts.each do |post|
-  %h3
-    = link_to post.title, post
-  %small
-    %i.icon-user
-    = link_to post.instructor.name, instructor_path(post.instructor)
-    /
-      %i{:class => "icon-calendar"}
-      =post.created_at.strftime("%d %b. %Y")
-      %i{:class => "icon-time"}
-      =post.created_at.strftime("%H:%M")
-  %p
-    = post.content.slice(0..200)+"..."
-    = link_to 'Več <i class="icon-plus"></i>'.html_safe, post
-  %br/
+span7.offset1
+  - @posts.each do |post|
+    %h3
+      = link_to post.title, post
+    %small
+      %i.icon-user
+      = link_to post.instructor.name, instructor_path(post.instructor)
+      /
+        %i{:class => "icon-calendar"}
+        =post.created_at.strftime("%d %b. %Y")
+        %i{:class => "icon-time"}
+        =post.created_at.strftime("%H:%M")
+    %p
+      = post.content.slice(0..200)+"..."
+      = link_to 'Več <i class="icon-plus"></i>'.html_safe, post
+    %hr/
