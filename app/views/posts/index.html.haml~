@@ -1,4 +1,6 @@
-span7.offset1
+.span7.offset1
+  %h1
+    To je blog
   - @posts.each do |post|
     %h3
       = link_to post.title, post

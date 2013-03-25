@@ -1,0 +1,7 @@
+Feature: obstaja prva stran
+
+Scenario: Uporabnik pride na stran
+
+Given I am on the KinVital homepage
+When I follow "Blog"
+Then I should see "Tko je blog"
