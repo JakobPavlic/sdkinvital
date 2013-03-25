@@ -9,6 +9,7 @@ class PostsController < ApplicationController
     @ogtitle=@post.title
     @ogdescription=@post.content.slice(0..100)+"..."
     @ogtype="article"
+    @id=@post.id
   end
   
 end
