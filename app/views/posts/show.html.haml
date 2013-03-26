@@ -1,35 +1,37 @@
 .row-fluid
   .span7.offset2
     %div{:id => "fb-root"}
-    = link_to '<i class="icon-chevron-left"></i> Vse objave'.html_safe, posts_path
+    .post.dvignjenirobovi.sencaznotraj
+      = link_to '<i class="icon-chevron-left"></i> Vse objave'.html_safe, posts_path
 
-    %h2
-      =@post.title
-    %small.muted
-      %i.icon-user
-      = link_to @post.instructor.name, instructor_path(@post.instructor)
+      %h2
+        =@post.title
+      %small.muted
+        %i.icon-user
+        = link_to @post.instructor.name, instructor_path(@post.instructor)
 
-      %i{:class => "icon-time"}
-      =@post.created_at.strftime("%d %b. %Y")
-      ob
-      =@post.created_at.strftime("%H:%M")
+        %i{:class => "icon-time"}
+        =@post.created_at.strftime("%d %b. %Y")
+        ob
+        =@post.created_at.strftime("%H:%M")
 
-    %p
-      =@post.content
-    /%p
-    /  =render 'layouts/disqus'
-
-  /      
-    %div.pull-right
-      %ul.inline
-        %li
-          <div class="fb-like" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false" data-action="recommend"></div>
-        %li  
-          <a href="https://twitter.com/share" data-url="#{request.protocol}#{request.host}#{request.fullpath}" class="twitter-share-button" data-count="none" data-lang="en">Tweet</a>
-        %li
-          <div class="g-plusone" data-size="medium" data-annotation="none" data-href="#{request.protocol}#{request.host}#{request.fullpath}"></div>
-        
-      =render 'layouts/facebook'
-      =render 'layouts/google'
-      =render 'layouts/twitter'
-
+      %p
+        =@post.content
+      %hr
+          
+      -#
+        %p
+          %ul.inline
+            %li
+              <div class="fb-like" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false" data-action="recommend"></div>
+            %li  
+              <a href="https://twitter.com/share" data-url="#{request.protocol}#{request.host}#{request.fullpath}" class="twitter-share-button" data-count="none" data-lang="en">Tweet</a>
+            %li
+              <div class="g-plusone" data-size="medium" data-annotation="none" data-href="#{request.protocol}#{request.host}#{request.fullpath}"></div>
+            
+        =render 'layouts/facebook'
+        =render 'layouts/google'
+        =render 'layouts/twitter'
+        %hr
+        .komentarji
+          =render 'layouts/disqus'

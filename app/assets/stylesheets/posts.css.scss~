@@ -2,11 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-//efekti s sencami-Objave na blogu-veliko kode, lep efekt
+//efekti s sencami-Objave na blogu
 .post{
   background-color: #FFF;
   padding: 30px;
   margin: 10px;
+  //border: solid 3px #F0F0F0;
 }
 
 .komentarji{
@@ -50,7 +51,7 @@
   right: 10px;
   left: auto;
 }
-.sencaznotraj
+.znotraj
 {
   position:relative;
   -webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.3), 0 0 5px rgba(0, 0, 0, 0.1) inset;
