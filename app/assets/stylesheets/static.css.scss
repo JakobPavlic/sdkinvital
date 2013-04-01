@@ -17,15 +17,11 @@ $petroll: darken($petrol, 9%);
   border-radius: $tl $tr $br $bl;
 }
 
-//.modroozadje{
-//  @include border_radius(10px, 10px, 10px, 10px);
-//  background-color: $petrol;
-//  padding: 20px;
-//  border: solid 1px $petroll;
-//}
-
+body {
+  background-image: url(/assets/subtle_dots.png);
+}
 .content {
    background-color: #FFFFFF;
    padding: 60px;
-   border: solid 1px #E0E0E0;
+   //border: solid 1px #E0E0E0;
 }
