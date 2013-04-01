@@ -32,8 +32,9 @@
       $(document).ready(function(){
         $('.carousel').carousel();
       });
-  .span2
+  .span5.modroozadje
     =render 'layouts/mailchimp'
+    =render 'layouts/timeline'
     
 .row-fluid
   .span4
@@ -42,9 +43,9 @@
         Letos sem tekla na Grintovec. Počutim se super!
       %small
         Štefka, 102
-/.footer
-/  %ul.nav.nav-pills.pull-right
-/    %li
-/      =link_to "Facebook", "http://www.facebook.com/sdkinvital"
-/    %li
-/      =link_to "Google+", "http://plus.google.com/100090636462709186136/posts"
+.footer
+  %ul.nav.nav-pills.pull-right
+    %li
+      =link_to "Facebook", "http://www.facebook.com/sdkinvital"
+    %li
+      =link_to "Google+", "http://plus.google.com/100090636462709186136/posts"

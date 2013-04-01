@@ -1,8 +1,6 @@
-.span7.offset1
-  %h1
-    Tko je blog
+.span7
   - @posts.each do |post|
-    .post.dvignjenirobovi.znotraj 
+    .post
       %h3
         = link_to post.title, post
       %small

@@ -2,7 +2,30 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/*div#Galerija{
-  width: 420px;
-}*/
+div#Galerija{
+  max-width: 480px;
+}
 
+$petrol: lighten(#19586D, 70%);
+$petroll: darken($petrol, 9%);
+@mixin border_radius($tl: 5px, $tr: 5px, $br: 5px, $bl: 5px) {
+  -moz-border-radius: $tl $tr $br $bl;
+  -webkit-border-top-left-radius: $tl;
+  -webkit-border-top-right-radius: $tr;
+  -webkit-border-bottom-right-radius: $br;
+  -webkit-border-bottom-left-radius: $bl;
+  border-radius: $tl $tr $br $bl;
+}
+
+.modroozadje{
+  @include border_radius(10px, 10px, 10px, 10px);
+  background-color: $petrol;
+  padding: 20px;
+  border: solid 1px $petroll;
+}
+
+.content {
+   background-color: #FFFFFF;
+   padding: 60px;
+   border: solid 1px #E0E0E0;
+}
