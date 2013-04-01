@@ -11,6 +11,13 @@
     %meta{"property" => "og:image", :content => "#{defined?(@ogpicture) ? @ogpicture : "http://i1343.photobucket.com/albums/o782/jakob-pavlic/DSCN4902_zps17865775.jpg"}"}
     %meta{"property" => "og:site_name", :content => "KinVital"}
     %meta{"property" => "fb:admins", :content => "100005478642666"}
+    %meta{"name" => "twitter:title", :content => "#{defined?(@ogtitle) ? @ogtitle : "ŠD KinVital"}"}
+    %meta{"name" => "twitter:card", :content => "summary"}
+    %meta{"name" => "twitter:url", :content => "#{request.protocol}#{request.host}#{request.fullpath}"}
+    %meta{"name" => "twitter:description", :content => "#{defined?(@ogdescription) ? @ogdescription : "Športno društvo"}"}
+    %meta{"name" => "twitter:image", :content => "#{defined?(@ogpicture) ? @ogpicture : "http://i1343.photobucket.com/albums/o782/jakob-pavlic/DSCN4902_zps17865775.jpg"}"}
+    %meta{"name" => "twitter:site", :content => "@KinVital"}
+    
     = stylesheet_link_tag 'application'
     = javascript_include_tag 'application'
     = csrf_meta_tags

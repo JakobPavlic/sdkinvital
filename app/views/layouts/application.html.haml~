@@ -29,12 +29,5 @@
         .content
           = render 'layouts/messages'
           = yield
-      .footer
-        .navbar
-          %ul.nav.nav-pills.pull-right
-            %li
-              =link_to "Facebook", "http://ww.facebook.com"
-            %li
-              =link_to "Google+", "http://ww.facebook.com"
         
     
