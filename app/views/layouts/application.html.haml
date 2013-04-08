@@ -1,6 +1,7 @@
 !!! 5
 %html{"xmlns:og" => "http://ogp.me/ns#"}
   %head
+    %link{ "href" => "http://fonts.googleapis.com/css?family=Oswald&subset=latin,latin-ext", "rel" => "stylesheet", "type" => "text/css"}
     %meta{:charset => "utf-8"}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
     %title= content_for?(:title) ? yield(:title) : "#{defined?(@ogtitle) ? "Kin: " + @ogtitle : "ŠD KinVital"}"
@@ -27,7 +28,7 @@
     /[if lt IE 8]
       = stylesheet_link_tag "font-awesome-ie7.min.css", media: "all"
   %body    
-    %div.navbar.navbar-fixed-top
+    %div.navbar.navbar-fixed-top.navbar-inverse
       %div.navbar-inner
         .container
           =render 'layouts/navigation'
@@ -36,5 +37,31 @@
         .content
           = render 'layouts/messages'
           = yield
-        
+    %footer.footer
+      .container
+        .row-fluid
+          .span2
+            %h5
+              Kontakt
+            %ul
+              %li
+                %i{:class => "icon-phone"}
+                0
+              %li
+                %i{:class => "icon-envelope-alt"}
+                kinvital@gmail.com
+          .span2
+            %h5
+              KinVital na spletu
+            %ul
+              %li
+                %i{:class => "icon-facebook-sign"}
+                =link_to "/sdkinvital", "http://www.facebook.com/sdkinvital"
+              %li
+                %i{:class => "icon-twitter-sign"}
+                =link_to "@kinvital", "http://twitter.com/kinvital"
+              %li
+                %i{:class => "icon-google-plus-sign"}
+                =link_to "ŠD KinVital", "http://plus.google.com/100090636462709186136/posts"
+                 
     

@@ -3,10 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 div#Galerija{
-  max-width: 480px;
 }
 
-$petrol: lighten(#19586D, 70%);
+$petrol: #19586D;
 $petroll: darken($petrol, 9%);
 @mixin border_radius($tl: 5px, $tr: 5px, $br: 5px, $bl: 5px) {
   -moz-border-radius: $tl $tr $br $bl;
@@ -17,11 +16,20 @@ $petroll: darken($petrol, 9%);
   border-radius: $tl $tr $br $bl;
 }
 
+
 body {
   background-image: url(/assets/subtle_dots.png);
+  //www.subtle-patterns.com
 }
+//vsebina
 .content {
    background-color: #FFFFFF;
-   padding: 60px;
+   padding: 30px;
    //border: solid 1px #E0E0E0;
+}
+.oswald{
+  @include border_radius (10px, 10px, 0px, 0px);
+  font-family: 'Oswald',"Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: $petrol;
+  padding: 5px;
 }
