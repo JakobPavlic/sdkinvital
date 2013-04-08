@@ -23,6 +23,7 @@ end
 gem 'jquery-rails'
 
 gem 'haml'
+gem 'omniauth-google-oauth2'
 
 group :development, :test do
   gem 'ruby-debug19'

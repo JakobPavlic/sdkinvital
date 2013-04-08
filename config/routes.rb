@@ -7,6 +7,9 @@ Sport::Application.routes.draw do
   # first created -> highest priority.
 
   match '/index' => 'static#index'
+  
+  match "/auth/:provider/callback" => "sessions#create"
+  match "/logout" => "sessions#destroy", :as => :logout
   # Sample of regular route:
   #match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action

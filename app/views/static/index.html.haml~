@@ -1,3 +1,10 @@
+#app/views/sessions/_login.html.haml
+- if @current_user
+  %p.welcome Welcome, #{@current_user.name}!
+  = link_to 'Log Out', logout_path
+- else
+  %p.login= link_to 'Log in with your Google account', "/auth/google_oauth2"
+
 .row-fluid
   %div{:id => "Galerija", :class => "carousel slide"}
     %ol{:class => "carousel-indicators"}
@@ -14,16 +21,13 @@
       %div{:class => "item"}
         %img{:src => "http://placehold.it/900x450", :title => "KIN:Upokojenci"}
         %div{:class => "carousel-caption"}
-          %h1
-            Kin: Tek
           %p.lead
-            Opis
+            Kin: Tek
       %div{:class => "item"}
         %img{:src => "http://placehold.it/900x450", :title => "KIN:raztezanje"}
         %div{:class => "carousel-caption"}
-          %h1
-            Kin: Extreme
           %p.lead
+            Kin: Extreme
         
     %a{:class => "carousel-control left", :href => "#Galerija", "data-slide" => "prev"}
       &lsaquo;
