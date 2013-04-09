@@ -16,3 +16,14 @@
     %li{:class => "#{'active' if current_page?(instructors_path)}"}
       =link_to 'Inštruktorji', instructors_path
     %li.divider-vertical
+/  %ul.nav.pull-right
+/    - if @current_user
+/      %li
+/        %p.navbar-text
+/          %i.icon-user
+/          = @current_user.name
+/      %li
+/        = link_to '<i class = "icon-signout icon-large"></i>'.html_safe, logout_path
+/    - else
+/      %li
+/        = link_to '<i class = "icon-signin icon-large"></i>'.html_safe, "/auth/google_oauth2"
