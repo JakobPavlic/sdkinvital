@@ -1,12 +1,11 @@
 .row-fluid
   .span7
+    =link_to "Dodaj novo objavo", new_post_path
     - @posts.each do |post|
       .post
-        %h3
+        %h3.oswald
           = link_to post.title, post
         %small
-          %i.icon-user
-          = link_to post.instructor.name, instructor_path(post.instructor)
           /
             %i{:class => "icon-calendar"}
             =post.created_at.strftime("%d %b. %Y")

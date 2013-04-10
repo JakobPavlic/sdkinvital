@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   include ActiveModel::MassAssignmentSecurity
+  has_many :posts
   attr_protected :uid, :provider, :name
   def self.create_with_omniauth(auth)
     user = User.create!

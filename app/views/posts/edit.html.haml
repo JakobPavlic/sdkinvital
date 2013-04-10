@@ -1,0 +1,10 @@
+= form_tag post_path(@post), :method => :put do
+
+  = label :post, :title, 'Naslov'
+  = text_field :post, :title
+
+  = label :post, :content, 'Besedilo'
+  = text_area :post, :content
+
+
+  = submit_tag 'Shrani'

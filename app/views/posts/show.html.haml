@@ -3,12 +3,12 @@
     %div{:id => "fb-root"}
     .post
       = link_to '<i class="icon-chevron-left"></i> Vse objave'.html_safe, posts_path
+      = link_to "Uredi objavo", edit_post_path
+      = button_to "Izbris", post_path(@post), :method => :delete, :confirm => "Ali ste prepričani?"
 
       %h2.oswald
         =@post.title
       %small.muted
-        %i.icon-user
-        = link_to @post.instructor.name, instructor_path(@post.instructor)
 
         %i{:class => "icon-time"}
         =@post.created_at.strftime("%d %b. %Y")

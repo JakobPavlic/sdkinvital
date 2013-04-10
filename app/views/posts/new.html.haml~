@@ -1,0 +1,10 @@
+= form_tag posts_path do
+
+  = label :post, :title, 'Naslov'
+  = text_field :post, :title
+
+  = label :post, :content, 'Besedilo'
+  = text_area :post, :content
+
+
+  = submit_tag 'Save Changes'
