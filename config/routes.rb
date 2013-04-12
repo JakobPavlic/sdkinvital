@@ -1,8 +1,8 @@
 Sport::Application.routes.draw do
 
-  resources :instructors
+  resources :instructors, :only => [:index, :show]
   resources :posts
-  resources :exercises
+  resources :exercises, :only => [:index, :show]
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

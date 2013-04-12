@@ -3,8 +3,10 @@
     %div{:id => "fb-root"}
     .post
       = link_to '<i class="icon-chevron-left"></i> Vse objave'.html_safe, posts_path
-      = link_to "Uredi objavo", edit_post_path
-      = button_to "Izbris", post_path(@post), :method => :delete, :confirm => "Ali ste prepričani?"
+      -if can? :update, @post
+        = link_to "Uredi objavo", edit_post_path
+      -if can? :destroy, @post 
+        = button_to "Izbris", post_path(@post), :method => :delete, :confirm => "Ali ste prepričani?"
 
       %h2.oswald
         =@post.title
@@ -19,18 +21,18 @@
         =@post.content
       %hr
           
-      %p
-        %ul.inline
-          %li
-            <div class="fb-like" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false" data-action="recommend"></div>
-          %li  
-            <a href="https://twitter.com/share" data-url="#{request.protocol}#{request.host}#{request.fullpath}" class="twitter-share-button" data-count="none" data-lang="en">Tweet</a>
-          %li
-            <div class="g-plusone" data-size="medium" data-annotation="none" data-href="#{request.protocol}#{request.host}#{request.fullpath}"></div>
+/      %p
+/        %ul.inline
+/          %li
+/            <div class="fb-like" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false" data-action="recommend"></div>
+/          %li  
+/            <a href="https://twitter.com/share" data-url="#{request.protocol}#{request.host}#{request.fullpath}" class="twitter-share-button" data-count="none" data-lang="en">Tweet</a>
+/          %li
+/            <div class="g-plusone" data-size="medium" data-annotation="none" data-href="#{request.protocol}#{request.host}#{request.fullpath}"></div>
            
-      =render 'layouts/facebook'
-      =render 'layouts/google'
-      =render 'layouts/twitter'
-      %hr
-      .komentarji
-        =render 'layouts/disqus'
+/      =render 'layouts/facebook'
+/      =render 'layouts/google'
+/      =render 'layouts/twitter'
+/      %hr
+/      .komentarji
+/        =render 'layouts/disqus'

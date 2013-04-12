@@ -24,6 +24,7 @@ gem 'jquery-rails'
 
 gem 'haml'
 gem 'omniauth-google-oauth2'
+gem 'cancan'
 
 group :development, :test do
   gem 'ruby-debug19'

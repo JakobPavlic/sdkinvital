@@ -24,6 +24,7 @@ gem 'jquery-rails'
 
 gem 'haml'
 gem 'omniauth-google-oauth2'
+gem 'cancan'
 
 group :development, :test do
   gem 'ruby-debug19'
@@ -35,7 +36,6 @@ group :production do
 end
 gem 'therubyracer'
 gem 'bootstrap-sass'
-gem 'simple_form'
 gem 'newrelic_rpm'
 
 gem "font-awesome-rails"

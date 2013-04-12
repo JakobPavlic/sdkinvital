@@ -1,6 +1,7 @@
 .row-fluid
   .span7
-    =link_to "Dodaj novo objavo", new_post_path
+    -if can? :create, Post 
+      =link_to "Dodaj novo objavo", new_post_path
     - @posts.each do |post|
       .post
         %h3.oswald
