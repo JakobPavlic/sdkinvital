@@ -8,5 +8,6 @@ class User < ActiveRecord::Base
     user.uid = auth["uid"]
     user.name = auth["info"]["name"]
     user.save!
+    user
   end
 end
