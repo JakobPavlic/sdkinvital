@@ -1,10 +1,8 @@
 .row-fluid
-  .span7
+  .span10
     %div{:id => "fb-root"}
     .post
       = link_to '<i class="icon-chevron-left"></i> Vse objave'.html_safe, posts_path
-      = link_to "Uredi objavo", edit_post_path
-      = button_to "Izbris", post_path(@post), :method => :delete, :confirm => "Ali ste prepričani?"
 
       %h2.oswald
         =@post.title
@@ -14,9 +12,13 @@
         =@post.created_at.strftime("%d %b. %Y")
         ob
         =@post.created_at.strftime("%H:%M")
-
       %p
-        =@post.content
+        =raw @post.content
+      %p
+        -if can? :update, @post
+          = link_to "Uredi objavo", edit_post_path, :class => "btn"
+      -if can? :destroy, @post 
+        = button_to "<i class='icon-edit'></i> Izbris".html_safe, post_path(@post), :method => :delete, :confirm => "Ali ste prepričani?",:class => 'btn btn-danger'
       %hr
           
 /      %p

@@ -1,0 +1,48 @@
+/**
+* Slovenian localisation for bootstrap-wysihtml5
+*/
+(function($){
+    $.fn.wysihtml5.locale["sl-SL"] = {
+        font_styles: {
+            normal: "Normalno besedilo",
+            h1: "Naslov 1",
+            h2: "Naslov 2",
+            h3: "Naslov 3"
+        },
+        emphasis: {
+            bold: "Krepko",
+            italic: "Ležeče",
+            underline: "Podčrtano"
+        },
+        lists: {
+            unordered: "Neurejen seznam",
+            ordered: "Urejen seznam",
+            outdent: "Zamik v levo",
+            indent: "Zamik v desno"
+        },
+        link: {
+            insert: "Vstavi povezavo",
+            cancel: "Prekliči"
+        },
+        image: {
+            insert: "Vstavi sliko",
+            cancel: "Prekliči"
+        },
+        html: {
+            edit: "Prikaži HTML"
+        },
+        colours: {
+            black: "Črna",
+            silver: "Srebrna",
+            gray: "Siva",
+            maroon: "Kostanjeva",
+            red: "Rdeča",
+            purple: "Vijolična",
+            green: "Zelena",
+            olive: "Olivna",
+            navy: "Temno modra",
+            blue: "Modra",
+            orange: "Oranžna"
+        }
+    };
+}(jQuery));

@@ -1,7 +1,7 @@
 .row-fluid
   .span7
     -if can? :create, Post 
-      =link_to "Dodaj novo objavo", new_post_path
+      =link_to "<i class = 'icon-pencil'></i> Nova objava".html_safe, new_post_path, :class => "btn btn-primary"
     - @posts.each do |post|
       .post
         %h3.oswald
@@ -13,5 +13,6 @@
             %i{:class => "icon-time"}
             =post.created_at.strftime("%H:%M")
         %p
-          = post.content.slice(0..200)+"..."
-          = link_to 'Več <i class="icon-plus"></i>'.html_safe, post
+          = raw post.content
+        %hr
+

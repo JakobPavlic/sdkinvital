@@ -7,5 +7,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require bootstrap-wysihtml5
+//= require bootstrap-wysihtml5.sl-Sl.js
 //= require_tree .
  

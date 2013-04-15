@@ -45,7 +45,7 @@
           .span2
             %h5
               Kontakt
-            %ul
+            %ul.unstyled
               %li
                 %i{:class => "icon-phone"}
                 0
@@ -55,7 +55,7 @@
           .span2
             %h5
               KinVital na spletu
-            %ul
+            %ul.unstyled
               %li
                 %i{:class => "icon-facebook-sign"}
                 =link_to "/sdkinvital", "http://www.facebook.com/sdkinvital"
