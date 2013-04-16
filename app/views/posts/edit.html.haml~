@@ -1,12 +1,14 @@
-= form_tag post_path(@post), :method => :put do
+.row-fluid
+  .span10.offset1    
+    = form_tag post_path(@post), :method => :put do
 
-  = label :post, :title, 'Naslov'
-  = text_field :post, :title, :class => "input-block-level"
+      = label :post, :title, 'Naslov'
+      = text_field :post, :title, :class => "input-block-level"
 
-  = label :post, :content, 'Besedilo'
-  = text_area :post, :content, :id => 'besedilo', :class => "input-block-level"
-  :javascript
-    $('#besedilo').wysihtml5({"color": true, locale: "sl-SL"});
+      = label :post, :content, 'Besedilo'
+      = text_area :post, :content, :id => 'besedilo', :class => "input-block-level"
+      :javascript
+        $('#besedilo').wysihtml5({"color": true, locale: "sl-SL"});
 
 
-  = submit_tag 'Shrani', :class => "btn btn-primary"
+      = submit_tag 'Shrani', :class => "btn btn-primary"
