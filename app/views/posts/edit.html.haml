@@ -8,7 +8,7 @@
       = label :post, :content, 'Besedilo'
       = text_area :post, :content, :id => 'besedilo', :class => "input-block-level"
       :javascript
-        $('#besedilo').wysihtml5({"stylesheets": ["lib/css/wysiwyg-color.css"],"color": true, locale: "sl-SL"});
+        $('#besedilo').wysihtml5({"color": true, locale: "sl-SL"});
 
 
       = submit_tag 'Shrani', :class => "btn btn-primary"

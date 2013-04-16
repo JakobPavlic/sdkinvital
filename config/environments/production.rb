@@ -19,9 +19,7 @@ Sport::Application.configure do
 
   # Generate digests for assets URLs
   config.assets.digest = true
-  
-  #color CSS for wysihtml5
-  config.assets.precompile += %w( bootstrap-wysihtml5/wysiwyg-color.css )
+
   
 
   # Defaults to Rails.root.join("public/assets")
