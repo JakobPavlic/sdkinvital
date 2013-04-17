@@ -7,7 +7,7 @@ class Ability
       can :read, :all
     else
       can :read, :all
-      if user.role == "instructor"
+      if user.role == "instructor" || user.role == "sveznalac"
         can :create, Post
         can :update, Post do |post|
           post.try(:user) == user

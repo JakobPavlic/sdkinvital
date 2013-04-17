@@ -21,7 +21,7 @@ class PostsController < ApplicationController
     #@post = Post.create!(params[:post])
     @post.user_id = @current_user.id
     @post.save!
-    flash[:notice] = "#{@post.title} je bil shranjen."
+    flash[:notice] = "Objava '#{@post.title}' je bila shranjena."
     redirect_to posts_path
   end
   
@@ -32,7 +32,7 @@ class PostsController < ApplicationController
   def update
     #@post = Post.find(params[:id])
     @post.update_attributes!(params[:post])
-    flash[:notice] = "Objava #{@post.title} je bila posodobljena."
+    flash[:notice] = "Objava '#{@post.title}' je bila posodobljena."
     redirect_to post_path(@post)
   end
   
