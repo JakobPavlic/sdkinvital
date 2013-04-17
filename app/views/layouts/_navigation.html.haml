@@ -13,8 +13,8 @@
     %li{:class => "#{'active' if current_page?(exercises_path)}"}
       =link_to 'Vadbe', exercises_path
     %li.divider-vertical
-    %li{:class => "#{'active' if current_page?(instructors_path)}"}
-      =link_to 'Inštruktorji', instructors_path
+    %li{:class => "#{'active' if current_page?(users_path)}"}
+      =link_to 'Inštruktorji', users_path
     %li.divider-vertical
   %ul.nav.pull-right
     - if @current_user

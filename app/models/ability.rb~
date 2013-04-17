@@ -12,6 +12,9 @@ class Ability
         can :update, Post do |post|
           post.try(:user) == user
         end
+        can :destroy, Post do |post|
+          post.try(:user) == user
+        end
       end    
     end
   end

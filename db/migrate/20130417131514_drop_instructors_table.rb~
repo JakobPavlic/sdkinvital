@@ -1,0 +1,8 @@
+class DropInstructorsTable < ActiveRecord::Migration
+  def up
+    drop_table :instructors
+  end
+
+  def down
+  end
+end
