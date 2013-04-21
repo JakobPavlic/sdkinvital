@@ -16,10 +16,11 @@
         =raw @post.content
       %p
         -if can? :update, @post
-          = link_to "Uredi objavo", edit_post_path, :class => "btn"
+          = link_to "<i class='icon-edit'></i> Uredi objavo".html_safe, edit_post_path, :class => "btn"
       -if can? :destroy, @post 
-        = button_to "<i class='icon-edit'></i> Izbris".html_safe, post_path(@post), :method => :delete, :confirm => "Ali ste prepričani?",:class => 'btn btn-danger'
+        = button_to "Izbris", post_path(@post), :method => :delete, :confirm => "Ali ste prepričani?",:class => 'btn btn-danger'
       %hr
+      =render 'layouts/disqus'
           
 /      %p
 /        %ul.inline
@@ -35,4 +36,4 @@
 /      =render 'layouts/twitter'
 /      %hr
 /      .komentarji
-/        =render 'layouts/disqus'
+/       =render 'layouts/disqus'
