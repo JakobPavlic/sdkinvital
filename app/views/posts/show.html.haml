@@ -6,12 +6,13 @@
 
       %h2.oswald
         =@post.title
-      %small.muted
-
-        %i{:class => "icon-time"}
-        =@post.created_at.strftime("%d %b. %Y")
-        ob
-        =@post.created_at.strftime("%H:%M")
+      %p
+        =link_to @post.user.name, user_path(@post.user)
+        %small.muted
+          %i{:class => "icon-time"}
+          =@post.created_at.strftime("%d %b. %Y")
+          ob
+          =@post.created_at.strftime("%H:%M")
       %p
         =raw @post.content
       %p

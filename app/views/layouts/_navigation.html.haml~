@@ -13,9 +13,12 @@
     %li{:class => "#{'active' if current_page?(exercises_path)}"}
       =link_to 'Vadbe', exercises_path
     %li.divider-vertical
-    %li{:class => "#{'active' if current_page?(instructors_path)}"}
-      =link_to 'Inštruktorji', instructors_path
+    %li{:class => "#{'active' if current_page?(users_path)}"}
+      =link_to 'Inštruktorji', users_path
     %li.divider-vertical
+    %li{:class => "#{'active' if current_page?('/kineziologija')}"}
+      =link_to 'O kinezoioloijogi...iji?', '/kineziologija'
+    %li.divider-vertical 
   %ul.nav.pull-right
     - if @current_user
       %li
@@ -26,4 +29,4 @@
         = link_to '<i class = "icon-signout icon-large"></i>'.html_safe, logout_path
     - else
       %li
-        = link_to '<i class = "icon-signin icon-large"></i>'.html_safe, "/auth/google_oauth2"
+        = link_to '<i class = "icon-signin icon-large"></i>'.html_safe, "/auth/google_oauth2",'data-toggle' => 'tooltip', 'title' => 'alice in wonderland'

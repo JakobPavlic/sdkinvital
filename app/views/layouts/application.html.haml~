@@ -42,7 +42,7 @@
     %div#footer
       .container
         .row-fluid
-          .span2
+          .span2.offset3
             %h5
               Kontakt
             %ul.unstyled
@@ -55,15 +55,12 @@
           .span2
             %h5
               KinVital na spletu
-            %ul.unstyled
+            %ul.unstyled.inline
               %li
-                %i{:class => "icon-facebook-sign"}
-                =link_to "/sdkinvital", "http://www.facebook.com/sdkinvital"
+                =link_to image_tag("fc-webicon-facebook-m.png"), "http://www.facebook.com/sdkinvital"
               %li
-                %i{:class => "icon-twitter-sign"}
-                =link_to "@kinvital", "http://twitter.com/kinvital"
+                =link_to image_tag("fc-webicon-twitter-m.png"), "http://twitter.com/kinvital"
               %li
-                %i{:class => "icon-google-plus-sign"}
-                =link_to "ŠD KinVital", "http://plus.google.com/100090636462709186136/posts"
+                =link_to image_tag("fc-webicon-googleplus-m.png"), "http://plus.google.com/100090636462709186136/posts"
                  
     
