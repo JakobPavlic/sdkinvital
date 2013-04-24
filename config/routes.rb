@@ -6,7 +6,7 @@ Sport::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
   match '/kineziologija' => 'static#kineziologija'
-
+  match '/kdosmo' => 'static#kdosmo'
   match '/index' => 'static#index'
   
   match "/auth/:provider/callback" => "sessions#create"

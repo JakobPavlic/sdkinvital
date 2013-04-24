@@ -1,11 +1,13 @@
 .row-fluid
   .span7
     -if can? :create, Post 
-      =link_to "<i class = 'icon-pencil'></i> Nova objavo".html_safe, new_post_path, :class => "btn btn-primary"
+      =link_to "<i class = 'icon-pencil'></i> Nova objava".html_safe, new_post_path, :class => "btn btn-primary"
     - @posts.each do |post|
       .post
         %h3.oswald
           = link_to post.title, post
+        %p
+          /=link_to post.user.name, user_path(post.user)
         %small
           /
             %i{:class => "icon-calendar"}

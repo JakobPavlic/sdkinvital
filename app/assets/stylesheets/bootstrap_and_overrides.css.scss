@@ -1,16 +1,11 @@
 @import "bootstrap";
-body{padding-top: 60px;
+#wrap > .container{
+  padding-top:60px;
 }
 .container {
   max-width: 900px;
 }
-.carousel-caption {
-}
-.carousel-caption h1,
-.carousel-caption .lead {
-  color: #fff;
-  text-shadow: 0 1px 1px rgba(0,0,0,.4);
-}
+
 html,
 body {
   height: 100%;
@@ -48,20 +43,23 @@ body {
     padding-right: 20px;
     height: 150px;
   }
+  #push{
+    height: 150px;
+  }
   #wrap{
     margin: 0 auto -150px;
   }
 }
   
 @media (max-width: 480px) { 
+  #push,
   #footer {
     height: 150px;
   }
+  
   #wrap{
     margin: 0 auto -150px;
   }
-  
-  
 }
 
 @import "bootstrap-responsive";

@@ -29,16 +29,17 @@
       = stylesheet_link_tag "font-awesome-ie7.min.css", media: "all"
   %body
     %div#wrap    
-      %div.navbar.navbar-fixed-top
-        %div.navbar-inner
+      .container  
+        %div.navbar.navbar-fixed-top
+          %div.navbar-inner
+            .container
+              =render 'layouts/navigation'
+        #main{:role => "main"}
           .container
-            =render 'layouts/navigation'
-      #main{:role => "main"}
-        .container
-          .content
-            = render 'layouts/messages'
-            = yield
-          %div#push
+            .content
+              = render 'layouts/messages'
+              = yield
+            %div#push
     %div#footer
       .container
         .row-fluid

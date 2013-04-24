@@ -38,16 +38,18 @@
       $('.carousel').carousel();
     });
 .row-fluid    
-  .span5.modroozadje
+  .span8
+    %h3
+      ZADNJE Z BLOGA
+    -@posts.each do |post|
+      %h4
+        = link_to post.title, post
+      %small
+        =link_to post.user.name, user_path(post.user)
+      %p
+        =raw post.content
+      %hr
+  .span4
     =render 'layouts/mailchimp'
     =render 'layouts/timeline'
-    
-.row-fluid
-  .span4
-    %h3.oswald
-      Športno društvo KinVital
-    %blockquote
-      %p
-        Letos sem tekla na Grintovec. Počutim se super!
-      %small
-        Štefka, 102
+

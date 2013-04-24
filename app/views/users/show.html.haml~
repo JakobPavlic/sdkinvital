@@ -1,4 +1,4 @@
-%h4
+%h3
   =@user.name
 
-=@user.description
+=raw @user.description

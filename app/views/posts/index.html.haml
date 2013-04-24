@@ -6,6 +6,8 @@
       .post
         %h3.oswald
           = link_to post.title, post
+        %p
+          =link_to post.user.name, user_path(post.user)
         %small
           /
             %i{:class => "icon-calendar"}
