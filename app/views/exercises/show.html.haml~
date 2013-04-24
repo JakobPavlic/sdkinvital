@@ -1,4 +1,4 @@
-= link_to "class => '<i class="icon-plus"></i> Vse vadbe'.html_safe, exercises_path
+= link_to '<i class="icon-chevron-left"></i> Vse vadbe'.html_safe, exercises_path
 
 %h1
   =@exercise.name
