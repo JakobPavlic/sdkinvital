@@ -4,6 +4,4 @@ class StaticController < ApplicationController
   end
   def kineziologija
   end
-  def kdosmo
-  end
 end

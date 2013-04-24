@@ -19,8 +19,8 @@
     %li{:class => "#{'active' if current_page?('/kineziologija')}"}
       =link_to 'O kineziologiji', '/kineziologija'
     %li.divider-vertical
-    %li{:class => "#{'active' if current_page?('/kineziologija')}"}
-      =link_to 'Kdo smo', '/kdo smo'
+    %li{:class => "#{'active' if current_page?('/kdosmo')}"}
+      =link_to 'Kdo smo', '/kdosmo'
     %li.divider-vertical 
   %ul.nav.pull-right
     - if @current_user

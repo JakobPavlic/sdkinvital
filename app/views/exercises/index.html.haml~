@@ -2,4 +2,4 @@
   %h3
     = link_to exercise.name, exercise
   %p
-    = exercise.description
+    = raw exercise.description
