@@ -1,10 +1,5 @@
-/- if @current_user
-/  %p.welcome Welcome, #{@current_user.name}!
-/  = link_to 'Log Out', logout_path
-/- else
-/  %p.login= link_to 'Log in with your Google account', "/auth/google_oauth2"
-
 .row-fluid
+  /bootstrap galerija
   %div{:id => "Galerija", :class => "carousel slide"}
     %ol{:class => "carousel-indicators"}
       %li{"data-target" => "#Galerija", "data-slide-to" => "0", :class => "active"}
@@ -13,15 +8,17 @@
     
     %div{:class => "carousel-inner"}
       %div{:class => "active item"}
-        %img{:src => "http://placehold.it/900x450", :title => "KIN:Bootcamp"}
+        %img{:src => "http://placehold.it/900x450", :title => "KinRun"}
         %div{:class => "carousel-caption"}
           %p.lead
-            Kin: joga
+            Kin
+            =link_to 'Run', exercise_path(1)
       %div{:class => "item"}
-        %img{:src => "http://placehold.it/900x450", :title => "KIN:Upokojenci"}
+        %img{:src => "http://placehold.it/900x450", :title => "KinFlow"}
         %div{:class => "carousel-caption"}
           %p.lead
-            Kin: Tek
+            Kin
+            =link_to 'Flow', exercise_path(2)
       %div{:class => "item"}
         %img{:src => "http://placehold.it/900x450", :title => "KIN:raztezanje"}
         %div{:class => "carousel-caption"}
@@ -40,14 +37,15 @@
 .row-fluid    
   .span8
     %h3
-      ZADNJE Z BLOGA
+      Zadnje z
+      =link_to 'bloga', posts_path
     -@posts.each do |post|
       %h4
         = link_to post.title, post
       %small
         =link_to post.user.name, user_path(post.user)
       %p
-        =raw post.content
+        =raw post.content[0,400]
       %hr
   .span4
     =render 'layouts/mailchimp'

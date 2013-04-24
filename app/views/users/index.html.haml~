@@ -1,3 +1,6 @@
+<h3>Kdo smo</h3>
+<p>Športno društvo KinVital sestavljamo kineziologi s Fakultete za šport. Od tod tudi ime, ki je
+sestavljeno iz besed kineziologija in vitalnost. S skrbno izbranimi gibanji in vajami vas pripeljemo do želene vitalnosti.</p>
 -@users.each do |user|
   =user.name
   
