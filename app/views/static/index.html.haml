@@ -37,8 +37,7 @@
 .row-fluid    
   .span8
     %h3
-      Zadnje z
-      =link_to 'bloga', posts_path
+      Zadnje z bloga
     -@posts.each do |post|
       %h4
         = link_to post.title, post

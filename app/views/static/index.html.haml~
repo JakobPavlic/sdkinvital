@@ -37,8 +37,8 @@
 .row-fluid    
   .span8
     %h3
-      Zadnje z
-      =link_to 'bloga', posts_path
+      Zadnje z bloga
+      =link_to '+', posts_path
     -@posts.each do |post|
       %h4
         = link_to post.title, post
@@ -46,7 +46,7 @@
         =link_to post.user.name, user_path(post.user)
       %p
         =raw post.content[0,400]+"..."
-        =link_to "več", post
+        =link_to "+več", post
       %hr
   .span4
     =render 'layouts/mailchimp'
