@@ -1,7 +1,8 @@
 !!! 5
 %html{"xmlns:og" => "http://ogp.me/ns#"}
   %head
-    %link{ "href" => "http://fonts.googleapis.com/css?family=Oswald&subset=latin,latin-ext", "rel" => "stylesheet", "type" => "text/css"}
+    %link{ "href" => "http://fonts.googleapis.com/css?family=Titillium+Web:600&subset=latin-ext,latin", "rel" => "stylesheet", "type" => "text/css"}
+    %link{ "href" => "http://fonts.googleapis.com/css?family=Advent+Pro:300&subset=latin,latin-ext", "rel" => "stylesheet", "type" => "text/css"}
     %meta{:charset => "utf-8"}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
     %title= content_for?(:title) ? yield(:title) : "#{defined?(@ogtitle) ? "Kin: " + @ogtitle : "ŠD KinVital"}"
@@ -29,16 +30,17 @@
       = stylesheet_link_tag "font-awesome-ie7.min.css", media: "all"
   %body
     %div#wrap    
-      %div.navbar
-        %div.navbar-inner
+      .container  
+        %div.navbar.navbar-fixed-top
+          %div.navbar-inner
+            .container
+              =render 'layouts/navigation'
+        #main{:role => "main"}
           .container
-            =render 'layouts/navigation'
-      #main{:role => "main"}
-        .container
-          .content
-            = render 'layouts/messages'
-            = yield
-          %div#push
+            .content
+              = render 'layouts/messages'
+              = yield
+            %div#push
     %div#footer
       .container
         .row-fluid

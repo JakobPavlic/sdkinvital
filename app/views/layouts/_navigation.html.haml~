@@ -14,7 +14,7 @@
       =link_to 'Vadbe', exercises_path
     %li.divider-vertical
     %li{:class => "#{'active' if current_page?(users_path)}"}
-      =link_to 'Inštruktorji', users_path
+      =link_to 'O nas', users_path
     %li.divider-vertical
     %li{:class => "#{'active' if current_page?('/kineziologija')}"}
       =link_to 'O kineziologiji', '/kineziologija'

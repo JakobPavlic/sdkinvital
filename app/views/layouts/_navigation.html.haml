@@ -13,6 +13,9 @@
     %li{:class => "#{'active' if current_page?(exercises_path)}"}
       =link_to 'Vadbe', exercises_path
     %li.divider-vertical
+    %li{:class => "#{'active' if current_page?(extras_path)}"}
+      =link_to 'Dodatna ponudba', extras_path
+    %li.divider-vertical
     %li{:class => "#{'active' if current_page?(users_path)}"}
       =link_to 'O nas', users_path
     %li.divider-vertical

@@ -1,0 +1,7 @@
+= link_to '<i class="icon-chevron-left"></i> Vse ponudbe'.html_safe, exercises_path
+
+%h1
+  =@extra.name
+  
+%p
+  =raw @extra.description

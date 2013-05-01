@@ -3,6 +3,7 @@ Sport::Application.routes.draw do
   resources :users, :only => [:index, :show]
   resources :posts
   resources :exercises, :only => [:index, :show]
+  resources :extras, :only => [:index, :show]
   # The priority is based upon order of creation:
   # first created -> highest priority.
   match '/kineziologija' => 'static#kineziologija'

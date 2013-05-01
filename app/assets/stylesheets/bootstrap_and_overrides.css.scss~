@@ -29,6 +29,7 @@ body {
   background-color: #f5f5f5;
   border-top: solid 2px #5B5B5B;
   background-image: url("/assets/concrete_wall.png");
+  //background-color:#5D4157;
   /* by www.subtlepatterns.com */
   color: white;
 }
@@ -61,5 +62,4 @@ body {
     margin: 0 auto -150px;
   }
 }
-
 @import "bootstrap-responsive";

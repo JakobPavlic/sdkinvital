@@ -36,12 +36,10 @@
     });
 .row-fluid    
   .span8
-    %h3
-      Zadnje z bloga
     -@posts.each do |post|
-      %h4
+      %h2
         = link_to post.title, post
-      %small
+      %p
         =link_to post.user.name, user_path(post.user)
       %p
         =raw post.content[0,400]+"..."
