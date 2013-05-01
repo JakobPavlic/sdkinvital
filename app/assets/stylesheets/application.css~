@@ -8,5 +8,7 @@
  *= require bootstrap-wysihtml5
  *= require bootstrap-wysihtml5/wysiwyg-color
 */
-.flow {font-family: 'Allura', cursive;}
+p {
+  text-align:justify;
+}
 
