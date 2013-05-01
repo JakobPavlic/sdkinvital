@@ -5,7 +5,7 @@
     sestavljeno iz besed kineziologija in vitalnost. S skrbno izbranimi gibanji in vajami vas pripeljemo do želene vitalnosti.</p>
     %ul.thumbnails
       -@users.each do |user|
-        %li.span4
+        %li.span3
           %img{'src' => 'http://placehold.it/150x150',:class=>"img-polaroid"}
           %h4.flow
             =link_to user.name, user_path(user)
