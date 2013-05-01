@@ -2,5 +2,9 @@
 <p>Športno društvo KinVital sestavljamo kineziologi s Fakultete za šport. Od tod tudi ime, ki je
 sestavljeno iz besed kineziologija in vitalnost. S skrbno izbranimi gibanji in vajami vas pripeljemo do želene vitalnosti.</p>
 -@users.each do |user|
-  =link_to user.name, user_path(user)
+  %ul.thumbnails
+    %li.span4
+      %img{'src' => 'http://placehold.it/150x150'}
+      %h4.flow
+        =link_to user.name, user_path(user)
   
