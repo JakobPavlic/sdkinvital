@@ -4,7 +4,7 @@ sestavljeno iz besed kineziologija in vitalnost. S skrbno izbranimi gibanji in v
 -@users.each do |user|
   %ul.thumbnails
     %li.span4
-      %img{'data-src' => 'http://placehold.it/150x150'}
+      %img{'src' => 'http://placehold.it/150x150'}
       %h4.flow
         =link_to user.name, user_path(user)
   
