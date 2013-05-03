@@ -1,25 +1,18 @@
 .row-fluid
-  .span10
+  .span8
     %div{:id => "fb-root"}
     .post
       = link_to '<i class="icon-chevron-left"></i> Vse objave'.html_safe, posts_path
 
       %h2.oswald
         =@post.title
-      %small.muted
-
-        %i{:class => "icon-time"}
-        =@post.created_at.strftime("%d %b. %Y")
-        ob
-        =@post.created_at.strftime("%H:%M")
-        %p
-          =link_to @post.user.name, user_path(@post.user)
-          %small.muted
-
-            %i{:class => "icon-time"}
-            =@post.created_at.strftime("%d %b. %Y")
-            ob
-            =@post.created_at.strftime("%H:%M")
+      %p
+        =link_to @post.user.name, user_path(@post.user)
+        %small.muted
+          %i{:class => "icon-time"}
+          =@post.created_at.strftime("%d %b. %Y")
+          ob
+          =@post.created_at.strftime("%H:%M")
       %p
         =raw @post.content
       %p
@@ -28,6 +21,7 @@
       -if can? :destroy, @post 
         = button_to "Izbris", post_path(@post), :method => :delete, :confirm => "Ali ste prepričani?",:class => 'btn btn-danger'
       %hr
+      =render 'layouts/disqus'
           
 /      %p
 /        %ul.inline
@@ -41,6 +35,3 @@
 /      =render 'layouts/facebook'
 /      =render 'layouts/google'
 /      =render 'layouts/twitter'
-/      %hr
-/      .komentarji
-/       =render 'layouts/disqus'
