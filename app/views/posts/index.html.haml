@@ -1,5 +1,5 @@
 .row-fluid
-  .span8.offset2
+  .span10.offset1
     -if can? :create, Post 
       =link_to "<i class = 'icon-pencil'></i> Nova objava".html_safe, new_post_path, :class => "btn btn-primary"
     - @posts.each do |post|

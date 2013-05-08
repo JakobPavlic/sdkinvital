@@ -1,5 +1,5 @@
 .row-fluid
-  .span8
+  .span8.offset2
     %div{:id => "fb-root"}
     .post
       = link_to '<i class="icon-chevron-left"></i> Vse objave'.html_safe, posts_path
