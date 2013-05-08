@@ -6,10 +6,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap-carousel
-//= require bootstrap-alert
-//= require bootstrap-transition
-//= require bootstrap-collapse
+//= require bootstrap
 //= require bootstrap-wysihtml5
 //= require bootstrap-wysihtml5.sl-Sl.js
 //= require_tree .

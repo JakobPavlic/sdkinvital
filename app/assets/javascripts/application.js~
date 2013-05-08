@@ -7,6 +7,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-carousel
+//= require bootstrap-alert
 //= require bootstrap-transition
 //= require bootstrap-collapse
 //= require bootstrap-wysihtml5
