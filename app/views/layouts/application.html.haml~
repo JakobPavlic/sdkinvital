@@ -3,6 +3,7 @@
   %head
     %link{ "href" => "http://fonts.googleapis.com/css?family=Titillium+Web:600&subset=latin-ext,latin", "rel" => "stylesheet", "type" => "text/css"}
     %link{ "href" => "http://fonts.googleapis.com/css?family=Advent+Pro:300&subset=latin,latin-ext", "rel" => "stylesheet", "type" => "text/css"}
+    %link{ "href" => "http://fonts.googleapis.com/css?family=Patrick+Hand&subset=latin,latin-ext", "rel" => "stylesheet", "type" => "text/css"}
     %meta{:charset => "utf-8"}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
     %title= content_for?(:title) ? yield(:title) : "#{defined?(@ogtitle) ? "Kin: " + @ogtitle : "ŠD KinVital"}"
@@ -13,12 +14,6 @@
     %meta{"property" => "og:image", :content => "#{defined?(@ogpicture) ? @ogpicture : "http://i1343.photobucket.com/albums/o782/jakob-pavlic/DSCN4902_zps17865775.jpg"}"}
     %meta{"property" => "og:site_name", :content => "KinVital"}
     %meta{"property" => "fb:admins", :content => "100005478642666"}
-    %meta{"name" => "twitter:title", :content => "#{defined?(@ogtitle) ? @ogtitle : "ŠD KinVital"}"}
-    %meta{"name" => "twitter:card", :content => "summary"}
-    %meta{"name" => "twitter:url", :content => "#{request.protocol}#{request.host}#{request.fullpath}"}
-    %meta{"name" => "twitter:description", :content => "#{defined?(@ogdescription) ? @ogdescription : "Športno društvo"}"}
-    %meta{"name" => "twitter:image", :content => "#{defined?(@ogpicture) ? @ogpicture : "http://i1343.photobucket.com/albums/o782/jakob-pavlic/DSCN4902_zps17865775.jpg"}"}
-    %meta{"name" => "twitter:site", :content => "@KinVital"}
     
     = stylesheet_link_tag 'application'
     = javascript_include_tag 'application'
@@ -29,18 +24,19 @@
     /[if lt IE 8]
       = stylesheet_link_tag "font-awesome-ie7.min.css", media: "all"
   %body
-    %div#wrap    
-      .container  
-        %div.navbar.navbar-fixed-top
-          %div.navbar-inner
-            .container
-              =render 'layouts/navigation'
-        #main{:role => "main"}
-          .container
-            .content
-              = render 'layouts/messages'
-              = yield
-            %div#push
+    %div#wrap      
+      #main{:role => "main"}
+        .container
+          .naslovnica
+            =render 'layouts/naslovnica'
+          %div.navbar
+            %div.navbar-inner
+              .container
+                =render 'layouts/navigation'
+          .content
+            = render 'layouts/messages'
+            = yield
+          %div#push
     %div#footer
       .container
         .row-fluid
@@ -50,7 +46,7 @@
             %ul.unstyled
               %li
                 %i{:class => "icon-phone"}
-                0
+                031893284
               %li
                 %i{:class => "icon-envelope-alt"}
                 kinvital@gmail.com

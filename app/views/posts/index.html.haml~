@@ -15,8 +15,6 @@
             =post.created_at.strftime("%H:%M")
         %p
           = raw post.content
-        %p
-          = link_to "komentarji", post_path(post, :anchor => "disqus_thread")
         %hr
-=render 'layouts/disqusk'
+//=render 'layouts/disqusk'
 

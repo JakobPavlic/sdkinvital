@@ -3,8 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-  background-image: url(/assets/subtle_dots.png);
-  //background-color: #2E2633;
+  background-image: url(/assets/billie_holiday.png);
+  background-color:#FFFCEC;
   //color: #EFFFCD;
   //www.subtle-patterns.com
 }
@@ -16,7 +16,7 @@ body {
 }
 h1,h2,h3,h4{
   font-family: 'Titillium Web', sans-serif;
-  color: #99173C;
+  color: #286b1b;
   //background-color:;
   //border-left: solid 15px #CAD7B2;
 }
@@ -24,6 +24,10 @@ h1,h2,h3,h4{
   //font-family: 'Advent Pro',Helvetica, Arial, sans-serif;
   font-family: 'Patrick Hand', cursive;
   font-size:20px;
+  color: #f96c00;
+}
+.naslovnica {
+  //background-color: white;
 }
 
 

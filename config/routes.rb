@@ -8,6 +8,7 @@ Sport::Application.routes.draw do
   # first created -> highest priority.
   match '/kineziologija' => 'static#kineziologija'
   match '/index' => 'static#index'
+  match '/cenik' => 'static#cenik'
   
   match "/auth/:provider/callback" => "sessions#create"
   match "/logout" => "sessions#destroy", :as => :logout

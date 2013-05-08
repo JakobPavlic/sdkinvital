@@ -4,4 +4,6 @@ class StaticController < ApplicationController
   end
   def kineziologija
   end
+  def cenik
+  end
 end
