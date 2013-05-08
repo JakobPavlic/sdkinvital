@@ -4,14 +4,14 @@
 
 body {
   background-image: url(/assets/billie_holiday.png);
-  background-color:#FFFCEC;
+  //background-color:#FFFCEC;
   //color: #EFFFCD;
   //www.subtle-patterns.com
 }
 //vsebina
 .content {
    background-color: #FFFFFF;
-   padding: 30px;
+   padding: 20px;
    //border: solid 3px #CAD7B2;
 }
 h1,h2,h3,h4{
