@@ -1,9 +1,2 @@
-.row-fluid
-  .span4
-    %p
-      =image_tag("KiNlogo.png")
-  .span4  
-    %h1.flow
-      Gibaj s srcem. Za srce.
-      %i{:class => 'icon-heart'}
+=image_tag('naslovka.png')
 

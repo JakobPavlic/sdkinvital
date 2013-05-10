@@ -11,7 +11,8 @@ body {
 //vsebina
 .content {
    background-color: #FFFFFF;
-   padding: 20px;
+   padding: 30px;
+   margin-bottom: 10px;
    //border: solid 3px #CAD7B2;
 }
 h1,h2,h3,h4{
