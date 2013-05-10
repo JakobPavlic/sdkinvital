@@ -1,5 +1,60 @@
-- @exercises.each do |exercise|
-  %h3
-    = link_to exercise.name, exercise
-  %p
-    = raw exercise.description
+.row-fluid
+  .span8
+    - @exercises.each do |exercise|
+      %h3
+        = link_to exercise.name, exercise
+      %p
+        = raw exercise.description
+      %hr
+  .span4
+    %h2
+      Lokacije in termini
+    %h4
+      KinFlow
+    %p
+      Ponedeljek ob 19.00 (Tivoli)
+    %p
+      Četrtek ob 19.00 (Tivoli)
+    %h4
+      KinRun
+
+    %p
+      Ponedeljek ob 19.00 (Mostec)
+    %p
+      Torek ob 19.00 (Kodeljevo)
+    %p
+      Sreda ob 21.30 (Kongresni trg) – nočni tek po centru mesta
+    %p
+      Četrtek 19.00 (Mostec)
+    %p
+      Petek 19.00 (Tivoli)
+
+    %h4
+      KinExtreme
+
+    %p
+      Torek ob 18.30 (Kodeljevo)
+    %p
+      Četrtek ob 18.30 (Kodeljevo)
+
+    %h4
+      KinWalk
+
+    %p
+      Torek ob 19.00 (Tivoli)
+    %p
+      Petek ob 19.00 (Tivoli)
+
+    %h4
+      KinSenior
+
+    %p
+      Torek ob 7.30 (Tivoli)
+    %p
+      Četrtek ob 7.30 (Tivoli)
+
+    %h4
+      KinElite
+
+    %p
+      Po dogovoru.
