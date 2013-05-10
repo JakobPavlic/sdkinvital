@@ -12,7 +12,7 @@ body {
 .content {
    background-color: #FFFFFF;
    padding: 30px;
-   margin-bottom: 10px;
+   margin-bottom: 20px;
    //border: solid 3px #CAD7B2;
 }
 h1,h2,h3,h4{
