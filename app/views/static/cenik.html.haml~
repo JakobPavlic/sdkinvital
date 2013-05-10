@@ -1,2 +1,101 @@
-%h2.flow
-  Vse zastonj! (-:
+.row-fluid
+  .span10.offset1
+    %h1
+      Cenik
+
+    %h2
+      Članarina
+
+    %p
+      Letna članarina 20 EUR*
+
+    %p
+      *Vsak novi član ima ob plačilu članarine en mesec brezplačne neomejene vadbe (KinFlow, KinRun,
+      KinWalk, KinExtreme, KinSenior) oziroma 2 brezplačni vadbi v programu KinElite.
+
+    %h2
+      Vadbe
+    %h4
+      1 mesečna karta za vadbe KinFlow, KinRun, KinWalk, KinExtreme, KinSenior
+    %p
+      %ul  
+        %li
+          1 – krat tedensko 20 EUR
+        %li
+          2 – krat tedensko 28 EUR
+        %li  
+          3 - krat ali več tedensko 35 EUR
+
+    %h4
+      3 mesečna karta za vadbe KinFlow, KinRun, KinWalk, KinExtreme, KinSenior
+    %p
+      %ul
+        %li
+          1 – krat tedensko 50 EUR
+        %li  
+          2 – krat tedensko 70 EUR
+        %li  
+          3 – krat ali več tedensko 85 EUR
+
+    %h4
+      KinElite – 1 oseba
+    %ul
+      %li
+        4 obiski 60 EUR
+      %li  
+        8 obiskov 110 EUR
+      %li  
+        16 obiskov 200 EUR
+
+    %h4
+      KinElite – manjša skupina (2 – 4 osebe)
+    %ul
+      %li 
+        4 obiski 35 EUR
+      %li  
+        8 obiskov 60 EUR
+      %li  
+        16 obiskov 105 EUR
+
+    %h4
+      Vadba na domu
+
+    %ul
+      %li
+        4 obiski 60 EUR
+      %li  
+        8 obiskov 110 EUR
+      %li  
+        16 obiskov 200 EUR
+
+    %h4
+      Vadba za podjetja
+    %ul
+      %li
+        Po dogovoru.
+    %h4
+      Vadbeno svetovanje
+
+    %ul
+      %li
+        %p
+          Sestava programa vadbe 35 EUR*
+        %p  
+          * Vsak prejme 1 brezplačno uro z osebnim trenerjem.
+
+    %h2
+      Prehrana
+    %ul
+      %li
+        Prehransko svetovanje + sestava jedilnika 35 EUR
+    %h2
+      Prehrana + vadba
+    %ul
+      %li
+        Sestava programa vadbe + sestava jedilnika 60 EUR
+
+    %h2
+      Kineziotaping
+    %ul
+      %li
+        Namestitev trakov 10 EUR
