@@ -8,17 +8,17 @@
     
     %div{:class => "carousel-inner"}
       %div{:class => "active item"}
-        %img{:src => "http://placehold.it/900x450", :title => "KinRun"}
+        =image_tag("KinRun.jpg")
         %div{:class => "carousel-caption"}
           %p.lead
             Kin
             =link_to 'Run', exercise_path(1)
       %div{:class => "item"}
-        %img{:src => "http://placehold.it/900x450", :title => "KinFlow"}
+        =image_tag("KinExtreme.jpg")
         %div{:class => "carousel-caption"}
           %p.lead
             Kin
-            =link_to 'Flow', exercise_path(2)
+            =link_to 'Extreme', exercise_path(4)
       %div{:class => "item"}
         %img{:src => "http://placehold.it/900x450", :title => "KIN:raztezanje"}
         %div{:class => "carousel-caption"}
@@ -37,7 +37,7 @@
 .row-fluid    
   .span8
     -@posts.each do |post|
-      %h3
+      %h2
         = link_to post.title, post
       %p
         =link_to post.user.name, user_path(post.user)

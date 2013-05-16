@@ -1,5 +1,14 @@
 = link_to '<i class="icon-chevron-left"></i> Vsi inštruktorji'.html_safe, users_path
-%h3.flow
-  =@user.name
-
-=raw @user.description
+.row-fluid
+  .span8
+    =raw @user.description
+  .span4
+    %ul.thumbnails  
+      %li.span12
+        %div.thumbnail  
+          -unless @user.picture.nil?
+            =image_tag(@user.picture)
+          -else
+            %img{'src' => 'http://placehold.it/300x450'}
+          %h4.flow
+            =@user.name

@@ -5,7 +5,10 @@
     -@users.each do |user|
       %li.span4
         %div.thumbnail  
-          %img{'src' => 'http://placehold.it/300x300'}
+          -unless user.picture.nil?
+            =image_tag(user.picture)
+          -else
+            %img{'src' => 'http://placehold.it/300x450'}
           %h4.flow
             =link_to user.name, user_path(user)
   
