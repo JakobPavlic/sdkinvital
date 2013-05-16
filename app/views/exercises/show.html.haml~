@@ -2,6 +2,18 @@
 
 %h1
   =@exercise.name
+%ul.thumbnails
+  -if !(@exercise.first_picture.nil?) && @exercise.second_picture.nil? 
+    %li.span12
+      %div.thumbnail  
+        =image_tag(@exercise.first_picture)
+  -elsif !(@exercise.first_picture.nil?) && !(@exercise.second_picture.nil?)
+    %li.span6
+      %div.thumbnail  
+        =image_tag(@exercise.first_picture)
+    %li.span6
+      %div.thumbnail  
+        =image_tag(@exercise.second_picture)
   
 %p
-  =@exercise.description
+  =raw @exercise.description

@@ -1,7 +1,22 @@
-= link_to '<i class="icon-chevron-left"></i> Vse vadbe'.html_safe, exercises_path
+.row-fluid
+  .span12
+    %p  
+      = link_to '<i class="icon-chevron-left"></i> Vse vadbe'.html_safe, exercises_path
 
-%h1
-  =@exercise.name
-  
-%p
-  =raw @exercise.description
+    %h1
+      =@exercise.name
+    %ul.thumbnails
+      -if !(@exercise.first_picture.nil?) && @exercise.second_picture.nil? 
+        %li.span12
+          %div.thumbnail  
+            =image_tag(@exercise.first_picture)
+      -elsif !(@exercise.first_picture.nil?) && !(@exercise.second_picture.nil?)
+        %li.span6
+          %div.thumbnail  
+            =image_tag(@exercise.first_picture)
+        %li.span6
+          %div.thumbnail  
+            =image_tag(@exercise.second_picture)
+      
+    %p
+      =raw @exercise.description
