@@ -6,9 +6,9 @@
       %li.span4
         %div.thumbnail  
           -unless user.picture.nil?
-            =image_tag(user.picture)
+            =link_to image_tag(user.picture), user_path(user)
           -else
-            %img{'src' => 'http://placehold.it/300x450'}
+            =link_to image_tag('http://placehold.it/300x450'), user_path(user)
           %h4.flow
             =link_to user.name, user_path(user)
   

@@ -1,4 +1,5 @@
-= link_to '<i class="icon-chevron-left"></i> Vsi inštruktorji'.html_safe, users_path
+.row-fluid
+  = link_to '<i class="icon-chevron-left"></i> Vsi inštruktorji'.html_safe, users_path
 .row-fluid
   .span8
     =raw @user.description
@@ -11,4 +12,4 @@
           -else
             %img{'src' => 'http://placehold.it/300x450'}
           %h4.flow
-            @user.name
+            =@user.name
