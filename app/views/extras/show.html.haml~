@@ -1,7 +1,15 @@
-= link_to '<i class="icon-chevron-left"></i> Vse ponudbe'.html_safe, extras_path
+.row-fluid
+  .span12
+    = link_to '<i class="icon-chevron-left"></i> Vse ponudbe'.html_safe, extras_path
 
-%h1
-  =@extra.name
+    %h1
+      =@extra.name
   
-%p
-  =raw @extra.description
+    %p
+      =raw @extra.description
+      
+    %hr  
+      =render 'layouts/socikone'           
+      =render 'layouts/facebook'
+      =render 'layouts/google'
+      =render 'layouts/twitter'

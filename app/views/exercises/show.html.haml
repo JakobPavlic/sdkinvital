@@ -18,9 +18,8 @@
           %div.thumbnail  
             =image_tag(@exercise.second_picture)
       
-    %p
-      =raw @exercise.description
-    %p
+    =raw @exercise.description
+    %hr
       =render 'layouts/socikone'           
       =render 'layouts/facebook'
       =render 'layouts/google'
