@@ -8,7 +8,7 @@
           %li.span12
             %div.thumbnail  
               =link_to image_tag(exercise.first_picture), exercise_path(exercise)
-        -if !(exercise.first_picture.nil?) && !(exercise.second_picture.nil?)
+        -elsif !(exercise.first_picture.nil?) && !(exercise.second_picture.nil?)
           %li.span6
             %div.thumbnail  
               =link_to image_tag(exercise.first_picture), exercise_path(exercise)
