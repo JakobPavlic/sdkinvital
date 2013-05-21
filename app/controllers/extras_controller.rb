@@ -7,7 +7,7 @@ class ExtrasController < ApplicationController
     
     @extra=Extra.find(params[:id])
     @ogtitle=@extra.name
-    @ogdescription=@extra.description.slice(0..100)+"..."
-    @ogtype="activity"
+    @ogdescription=@extra.description.slice(0..500)+"..."
+    @ogtype="article"
   end
 end

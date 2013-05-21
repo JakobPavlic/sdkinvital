@@ -10,7 +10,7 @@ class PostsController < ApplicationController
     
     #spremenljivke za facebookov open graph 
     @ogtitle=@post.title
-    @ogdescription=@post.content.slice(0..100)+"..."
+    @ogdescription=@post.content.slice(0..500)+"..."
     @ogtype="article"
     @id=@post.id
   end

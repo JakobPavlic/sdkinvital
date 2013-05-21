@@ -7,7 +7,7 @@ class ExercisesController < ApplicationController
     
     @exercise=Exercise.find(params[:id])
     @ogtitle=@exercise.name
-    @ogdescription=@exercise.description.slice(0..100)+"..."
-    @ogtype="activity"
+    @ogdescription=@exercise.description.slice(0..500)+"..."
+    @ogtype="article"
   end
 end

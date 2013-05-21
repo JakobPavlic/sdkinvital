@@ -10,7 +10,7 @@ body {
 }
 .socikone {
   background-image: url(/assets/billie_holiday.png);
-  padding: 10px;
+  padding: 5px;
   
 }
 //vsebina
