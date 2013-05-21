@@ -2,7 +2,7 @@
 %html{"xmlns:og" => "http://ogp.me/ns#"}
   %head
     %link{ "href" => "http://fonts.googleapis.com/css?family=Titillium+Web:600&subset=latin-ext,latin", "rel" => "stylesheet", "type" => "text/css"}
-    %link{ "href" => "http://fonts.googleapis.com/css?family=Advent+Pro:300&subset=latin,latin-ext", "rel" => "stylesheet", "type" => "text/css"}
+    %link{ "href" => "http://fonts.googleapis.com/css?family=Open+Sans:300italic,400&subset=latin,latin-ext", "rel" => "stylesheet", "type" => "text/css"}
     %link{ "href" => "http://fonts.googleapis.com/css?family=Patrick+Hand&subset=latin,latin-ext", "rel" => "stylesheet", "type" => "text/css"}
     %meta{:charset => "utf-8"}
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
@@ -46,7 +46,7 @@
             %ul.unstyled
               %li
                 %i{:class => "icon-phone"}
-                031893284
+                031-893-284
               %li
                 %i{:class => "icon-envelope-alt"}
                 kinvital@gmail.com

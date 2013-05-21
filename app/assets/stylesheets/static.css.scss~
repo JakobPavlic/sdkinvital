@@ -16,7 +16,7 @@ body {
    //border: solid 3px #CAD7B2;
 }
 h1,h2,h3,h4{
-  //font-family: 'Titillium Web', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #286b1b;
   //background-color:;
   //border-left: solid 15px #CAD7B2;

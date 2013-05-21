@@ -8,6 +8,10 @@
   padding-top: 30px;
   margin: 10px;
 }
+p {
+  text-align:justify;
+  font-family: 'Open Sans', sans-serif;
+}
 
 .komentarji{
   margin{
