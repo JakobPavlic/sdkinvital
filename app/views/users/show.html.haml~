@@ -1,9 +1,7 @@
 .row-fluid
-  = link_to '<i class="icon-chevron-left"></i> Vsi inštruktorji'.html_safe, users_path
-.row-fluid
-  .span8
-    =raw @user.description
   .span4
+    %p
+      = link_to '<i class="icon-chevron-left"></i> Vsi inštruktorji'.html_safe, users_path
     %ul.thumbnails  
       %li.span12
         %div.thumbnail  
@@ -13,3 +11,5 @@
             %img{'src' => 'http://placehold.it/300x450'}
           %h4.flow
             =@user.name
+  .span8
+    =raw @user.description
