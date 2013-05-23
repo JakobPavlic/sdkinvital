@@ -1,7 +1,9 @@
 .row-fluid
-  .span4
+  .span12
     %p
       = link_to '<i class="icon-chevron-left"></i> Vsi inštruktorji'.html_safe, users_path
+.row-fluid
+  .span4
     %ul.thumbnails  
       %li.span12
         %div.thumbnail  
