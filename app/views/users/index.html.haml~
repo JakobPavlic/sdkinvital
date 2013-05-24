@@ -2,14 +2,14 @@
   <h2>O nas</h2>
   <p>Športno društvo KinVital v večini sestavljamo kineziologi s Fakultete za šport. Od tod tudi ime, ki je sestavljeno iz besed kineziologija in vitalnost. S skrbno izbranimi gibanji in vajami vas pripeljemo do želene vitalnosti. Poleg nas pa v društvu aktivno sodeluje tudi Mark Bračič, študent zadnjega letnika psihologije.</p>
   %h4
-    Statut
+    Statut društva
     =link_to '(povezava)', "https://docs.google.com/file/d/0B3RaRtiwbx9PS0NnblBUcDdkMlE/edit?usp=sharing"
   %ul.thumbnails
     -@users.each do |user|
       %li.span4
         %div.thumbnail  
           -unless user.picture.nil?
-            =link_to image_tag(user.picture), user_path(user)
+            =link_to image_tag(user.picture, :width => "280"), user_path(user)
           -else
             =link_to image_tag('http://placehold.it/300x450'), user_path(user)
           %h4.flow
