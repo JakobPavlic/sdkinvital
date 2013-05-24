@@ -9,6 +9,9 @@
   @include box-shadow(0 0 3px rgba(0,0,0,0.4));
   @include border-radius(10px);
   /*@include border-top-right-radius(10px);*/
+  background-color: #FFFFFF;
+  padding: 30px;
+  margin-bottom: 20px;
 }
 
 html,
@@ -45,27 +48,38 @@ body {
   #footer {
     margin-left: -20px;
     margin-right: -20px;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-right: 20px;
-    height: 150px;
+    height: 160px;
   }
   #push{
-    height: 150px;
+    height: 160px;
   }
   #wrap{
-    margin: 0 auto -150px;
+    margin: 0 auto -160px;
   }
 }
   
 @media (max-width: 480px) { 
   #push,
   #footer {
-    height: 150px;
+    height: 160px;
+    padding-left: 30px;
   }
   
   #wrap{
-    margin: 0 auto -150px;
+    margin: 0 auto -160px;
   }
+  .content {
+    padding:20px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .naslovnica {
+    margin-left: -65px;
+    margin-right: -75px;
+  }
+  
 }
 .socikone {
   background-image: url(/assets/billie_holiday.png);

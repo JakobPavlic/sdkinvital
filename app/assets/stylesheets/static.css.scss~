@@ -8,11 +8,6 @@ body {
   //color: #EFFFCD;
   //www.subtle-patterns.com
 }
-.socikone {
-  background-image: url(/assets/billie_holiday.png);
-  padding: 5px;
-  
-}
 //vsebina
 .content {
    background-color: #FFFFFF;

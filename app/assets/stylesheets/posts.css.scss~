@@ -6,11 +6,10 @@
 .post{
   background-color: #FFF;
   padding-top: 30px;
-  margin: 10px;
+  margin: 0px;
 }
 p {
   text-align:justify;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .komentarji{
@@ -19,45 +18,3 @@ p {
   }
 }
 
-
-.dvignjenirobovi
-{
-  position: relative;
-}
-.dvignjenirobovi:before, .dvignjenirobovi:after
-{
-  z-index: -1;
-  position: absolute;
-  content: "";
-  bottom: 15px;
-  left: 10px;
-  width: 50%;
-  top: 80%;
-  max-width:300px;
-  background: #777;
-  -webkit-box-shadow: 0 15px 10px #777;
-  -moz-box-shadow: 0 15px 10px #777;
-  box-shadow: 0 15px 10px #777;
-  -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-}
-.dvignjenirobovi:after
-{
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg);
-  right: 10px;
-  left: auto;
-}
-.sencaznotraj
-{
-  position:relative;
-  -webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.3), 0 0 5px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow:0 1px 1px rgba(0, 0, 0, 0.3), 0 0 5px rgba(0, 0, 0, 0.1) inset;
-  box-shadow:0 1px 1px rgba(0, 0, 0, 0.3), 0 0 5px rgba(0, 0, 0, 0.1) inset;
-}
