@@ -41,7 +41,7 @@
     $(document).ready(function(){
       $('.carousel').carousel();
     });
-.row   
+.row-fluid   
   .span7
     -@posts.each do |post|
       %h2
@@ -52,7 +52,7 @@
         =raw post.content[0,400]+"..."
         =link_to "+več", post
       %hr
-  .span4
+  .span5
     =render 'layouts/mailchimp'
     =render 'layouts/timeline'
 
