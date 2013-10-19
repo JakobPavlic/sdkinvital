@@ -41,7 +41,7 @@
     $(document).ready(function(){
       $('.carousel').carousel();
     });
-.row-fluid    
+.row   
   .span7
     -@posts.each do |post|
       %h2
