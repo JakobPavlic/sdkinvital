@@ -49,7 +49,7 @@
       %p
         =link_to post.user.name, user_path(post.user)
       %p
-        =raw post.content[0,380]+"..."
+        =raw post.content[0,450]+"..."
         =link_to "+več", post
       %hr
   .span5
