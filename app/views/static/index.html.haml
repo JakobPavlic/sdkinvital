@@ -42,10 +42,10 @@
       $('.carousel').carousel();
     });
 .row-fluid   
-  .span5
+  .span4
     =render 'layouts/mailchimp'
     =render 'layouts/timeline'
-  .span7
+  .span8
     -@posts.each do |post|
       %h2
         = link_to post.title, post
