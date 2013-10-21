@@ -42,6 +42,9 @@
       $('.carousel').carousel();
     });
 .row-fluid   
+  .span5
+    =render 'layouts/mailchimp'
+    =render 'layouts/timeline'
   .span7
     -@posts.each do |post|
       %h2
@@ -52,7 +55,4 @@
         =raw post.content[0,385]+"..."
         =link_to "+več", post
       %hr
-  .span5
-    =render 'layouts/mailchimp'
-    =render 'layouts/timeline'
 
