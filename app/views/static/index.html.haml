@@ -1,58 +1,58 @@
 .row-fluid
-  /bootstrap galerija
-  %div{:id => "Galerija", :class => "carousel slide"}
-    %ol{:class => "carousel-indicators"}
-      %li{"data-target" => "#Galerija", "data-slide-to" => "0", :class => "active"}
-      %li{"data-target" => "#Galerija", "data-slide-to" => "1"}
-      %li{"data-target" => "#Galerija", "data-slide-to" => "2"}
-      %li{"data-target" => "#Galerija", "data-slide-to" => "3"}
-    
-    %div{:class => "carousel-inner"}
-      %div{:class => "active item"}
-        =link_to image_tag("KinRun.jpg"), exercise_path(1)
-        %div{:class => "carousel-caption"}
-          %p.lead
-            Kin
-            =link_to 'Run', exercise_path(1)
-      %div{:class => "item"}
-        =link_to image_tag("KinExtreme.jpg"), exercise_path(4)
-        %div{:class => "carousel-caption"}
-          %p.lead
-            Kin
-            =link_to 'Extreme', exercise_path(4)
-      %div{:class => "item"}
-        =link_to image_tag("KinFlow.jpg"), exercise_path(2)
-        %div{:class => "carousel-caption"}
-          %p.lead
-            Kin
-            =link_to 'Flow', exercise_path(2)
-      %div{:class => "item"}
-        =link_to image_tag("plakat.jpg"), exercises_path()
-        %div{:class => "carousel-caption"}
-          %p.lead
-            KinVital
+  .span8
+    .row-fluid
+      /bootstrap galerija
+      %div{:id => "Galerija", :class => "carousel slide"}
+        %ol{:class => "carousel-indicators"}
+          %li{"data-target" => "#Galerija", "data-slide-to" => "0", :class => "active"}
+          %li{"data-target" => "#Galerija", "data-slide-to" => "1"}
+          %li{"data-target" => "#Galerija", "data-slide-to" => "2"}
+          %li{"data-target" => "#Galerija", "data-slide-to" => "3"}
         
-    %a{:class => "carousel-control left", :href => "#Galerija", "data-slide" => "prev"}
-      &lsaquo;
-    %a{:class => "carousel-control right", :href => "#Galerija", "data-slide" => "next"}
-      &rsaquo;
-        
-  :javascript
-    $(document).ready(function(){
-      $('.carousel').carousel();
-    });
-.row-fluid   
-  .span7
-    -@posts.each do |post|
-      %h2
-        = link_to post.title, post
-      %p
-        =link_to post.user.name, user_path(post.user)
-      %p
-        =raw post.content[0,385]+"..."
-        =link_to "+več", post
-      %hr
-  .span5
+        %div{:class => "carousel-inner"}
+          %div{:class => "active item"}
+            =link_to image_tag("KinRun.jpg"), exercise_path(1)
+            %div{:class => "carousel-caption"}
+              %p.lead
+                Kin
+                =link_to 'Run', exercise_path(1)
+          %div{:class => "item"}
+            =link_to image_tag("KinExtreme.jpg"), exercise_path(4)
+            %div{:class => "carousel-caption"}
+              %p.lead
+                Kin
+                =link_to 'Extreme', exercise_path(4)
+          %div{:class => "item"}
+            =link_to image_tag("KinFlow.jpg"), exercise_path(2)
+            %div{:class => "carousel-caption"}
+              %p.lead
+                Kin
+                =link_to 'Flow', exercise_path(2)
+          %div{:class => "item"}
+            =link_to image_tag("plakat.jpg"), exercises_path()
+            %div{:class => "carousel-caption"}
+              %p.lead
+                KinVital
+            
+        %a{:class => "carousel-control left", :href => "#Galerija", "data-slide" => "prev"}
+          &lsaquo;
+        %a{:class => "carousel-control right", :href => "#Galerija", "data-slide" => "next"}
+          &rsaquo;
+            
+      :javascript
+        $(document).ready(function(){
+          $('.carousel').carousel();
+        });
+    .row-fluid   
+      -@posts.each do |post|
+        %h2
+          = link_to post.title, post
+        %p
+          =link_to post.user.name, user_path(post.user)
+        %p
+          =raw post.content[0,385]+"..."
+          =link_to "+več", post
+        %hr
+  .span4
     =render 'layouts/mailchimp'
     =render 'layouts/timeline'
-
